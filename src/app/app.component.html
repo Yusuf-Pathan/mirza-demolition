@@ -1,10 +1,53 @@
-<button type="button" class="btn btn-primary">Primary</button>
-<button type="button" class="btn btn-secondary">Secondary</button>
-<button type="button" class="btn btn-success">Success</button>
-<button type="button" class="btn btn-danger">Danger</button>
-<button type="button" class="btn btn-warning">Warning</button>
-<button type="button" class="btn btn-info">Info</button>
-<button type="button" class="btn btn-light">Light</button>
-<button type="button" class="btn btn-dark">Dark</button>
+<div class="app-wrapper">
+  <mat-sidenav-container class="sidebar-container-wrapper">
+    <mat-sidenav #sidenav mode="over">
+      <label>Mirza Demolition</label>
+      <hr />
+      <nav>
+        <a routerLink="home" (click)="clickHandler()" routerLinkActive="active"
+          >Home</a
+        >
+        <a routerLink="about" (click)="clickHandler()" routerLinkActive="active"
+          >About</a
+        >
+        <a routerLink="login" (click)="clickHandler()" routerLinkActive="active"
+          >Login</a
+        >
+        <a
+          routerLink="sign-up"
+          (click)="clickHandler()"
+          routerLinkActive="active"
+          >Sign Up</a
+        >
+        <a
+          routerLink="contact"
+          (click)="clickHandler()"
+          routerLinkActive="active"
+          >Contact</a
+        >
+      </nav>
+    </mat-sidenav>
 
-<button type="button" class="btn btn-link">Link</button>
+    <mat-sidenav-content class="navbar-wrapper">
+      <mat-toolbar class="toolbar">
+        <header>
+          <label>Mirza Demolition</label>
+          <nav class="nav-container">
+            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+            <a routerLink="home" routerLinkActive="active">Home</a>
+            <a routerLink="about" routerLinkActive="active">About</a>
+            <a routerLink="login" routerLinkActive="active">Login</a>
+            <a routerLink="sign-up" routerLinkActive="active">Sign Up</a>
+            <a routerLink="contact" routerLinkActive="active">Contact</a>
+          </nav>
+        </header>
+      </mat-toolbar>
+
+      <section class="router-wrapper">
+        <router-outlet></router-outlet>
+      </section>
+
+      <section>Footer</section>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
