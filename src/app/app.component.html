@@ -1,9 +1,7 @@
 <div class="app-wrapper">
   <mat-sidenav-container class="sidebar-container-wrapper">
-    <mat-sidenav #sidenav mode="over">
-      <label>Mirza Demolition</label>
-      <hr />
-      <nav>
+    <mat-sidenav #sidenav>
+      <nav *ngIf="CONDITION" [@fadeInOnEnter] [@fadeOutOnLeave] mode="over">
         <a routerLink="home" (click)="clickHandler()" routerLinkActive="active"
           >Home</a
         >
@@ -26,19 +24,40 @@
           >Contact</a
         >
       </nav>
+
+      <label>Mirza Demolition</label>
+      <hr />
     </mat-sidenav>
 
     <mat-sidenav-content class="navbar-wrapper">
       <mat-toolbar class="toolbar">
         <header>
-          <label>Mirza Demolition</label>
           <nav class="nav-container">
-            <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
-            <a routerLink="home" routerLinkActive="active">Home</a>
-            <a routerLink="about" routerLinkActive="active">About</a>
-            <a routerLink="login" routerLinkActive="active">Login</a>
-            <a routerLink="sign-up" routerLinkActive="active">Sign Up</a>
-            <a routerLink="contact" routerLinkActive="active">Contact</a>
+            <div class="left-side-navs">
+              <div class="icon-wraper">
+                <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+              </div>
+              <div class="lefts-links">
+                <a routerLink="home" routerLinkActive="active">Home</a>
+                <a routerLink="about" routerLinkActive="active">About</a>
+                <a routerLink="login" routerLinkActive="active">Login</a>
+                <a routerLink="sign-up" routerLinkActive="active">Sign Up</a>
+                <a routerLink="contact" routerLinkActive="active">Contact</a>
+              </div>
+            </div>
+
+            <div class="mid-side-navs">
+              <div class="label-wraper">
+                <label>Mirza Demolition</label>
+              </div>
+            </div>
+            <div class="right-side-navs">
+              <div class="rights-links">
+                <a routerLink="home" routerLinkActive="active">Video</a>
+                <a routerLink="about" routerLinkActive="active">TestMonials</a>
+                <a routerLink="login" routerLinkActive="active">Contact Us</a>
+              </div>
+            </div>
           </nav>
         </header>
       </mat-toolbar>
@@ -46,8 +65,10 @@
       <section class="router-wrapper">
         <router-outlet></router-outlet>
       </section>
-
+      
       <section>Footer</section>
+     
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>
+
