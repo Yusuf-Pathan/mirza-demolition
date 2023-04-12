@@ -1,53 +1,10 @@
-.video-wraper{
-
-video {
-  object-fit: cover;
-  width: 100%;
-  height: 66vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.viewport-header {
-  position: relative;
-  height: 100vh;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-  .landings-content{
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: baseline;
-    width: 30vw;
-    top: 34vh;
-    left: 40px;
-
-
-    .land-para{
-      display: flex;
-      flex-direction: column;
-      color: black;
-      justify-content: flex-start;
-      width: 70%;
-      font-size: 20px;
-
-    }
-    .lands-button-wraper{
+.landing-wrapper {
+  .video-background-wrapper {
+    height: 100vh;
+    .background-video {
+      object-fit: cover;
       width: 100%;
-      display: flex;
-      margin: 15px 0px;
-
-      button{
-        align-items: center;
-        display: flex;
-        
-      }
+      height: 100%;
     }
   }
-  
 }

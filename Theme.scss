@@ -1,6 +1,5 @@
-@use '@angular/material' as mat;
+@use "@angular/material" as mat;
 @include mat.core();
-
 
 $md-primary: (
   50: #ffe9f3,
@@ -166,7 +165,6 @@ $md-error: (
     A700: #000000,
   ),
 );
-
 
 $my-primary: mat.define-palette($md-primary, 500);
 $my-accent: mat.define-palette($md-accent, A200, A100, A400);
