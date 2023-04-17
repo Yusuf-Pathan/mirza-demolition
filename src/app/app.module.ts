@@ -11,9 +11,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { CategoryComponent } from './components/category/category.component';
+import { CarouselModule } from 'ngx-owl-carousel-o';
+import { AboutComponent } from './components/about/about.component';
+import { GalleryComponent } from './components/gallery/gallery.component';
+import { VideoComponent } from './components/video/video.component';
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, CategoryComponent],
+  declarations: [AppComponent, LandingComponent, CategoryComponent, AboutComponent, GalleryComponent, VideoComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -24,6 +28,7 @@ import { CategoryComponent } from './components/category/category.component';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent],

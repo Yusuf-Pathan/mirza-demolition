@@ -1,0 +1,42 @@
+<div class="video-wrapper">
+  <div class="title-wraper">
+    <h2>Videos</h2>
+  </div>
+
+  <div class="raw-wrapper">
+    <div class="background-wrapper" *ngFor="let video of videos">
+      <div class="content-wrapper">
+        <video
+          [src]="video.vid"
+          autoplay
+          loop
+          playsinline
+          muted
+          class="background-video"
+        ></video>
+        <div class="timeline">
+          <span>#travel #Design</span>
+          <span class="icons-wrapper"
+            ><mat-icon>access_time</mat-icon>
+            <h4>3mins read</h4>
+          </span>
+        </div>
+        <div class="text">
+          construction service provider for each in every state
+        </div>
+        <div class="img-wrapper">
+          <div class="logo-wraper" *ngFor="let image of images">
+            <img [src]="image.img" alt="" />
+            <div class="date-wrapper">
+              <h5>yusuf</h5>
+              <p>25 nov 2022</p>
+            </div>
+          </div>
+          <div class="button-wrapper">
+            <button mat-raised-button>Read more</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

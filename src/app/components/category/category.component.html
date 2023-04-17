@@ -1,1 +1,26 @@
-<p>category works!</p>
+<div class="category-wrapper" [@bounce]="true" data-aos="fade-up">
+  <div class="heading-wrapper">
+    <h1>SERVICES</h1>
+  </div>
+  <div class="card-wraper">
+    <owl-carousel-o class="owl-theme" [options]="customOptions" #owlCat>
+      <ng-container *ngFor="let slide of categories">
+        <ng-template carouselSlide let-owlItem>
+          <div
+            class="slide"
+            [@activeSlide]="owlItem.isCentered ? 'active' : 'inActive'"
+          >
+            <img [src]="slide.img" />
+            <div>
+              {{ slide.title }}
+            </div>
+            <div>
+              {{ slide.subTitle }}
+            </div>
+            <button>Share</button>
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
+</div>
