@@ -3,6 +3,9 @@
 // @use 'assets/styles/material/_buttom-base-theme' as button;
 // @import "../Theme.scss";
 
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+
 html,
 body {
   height: 100%;
@@ -15,4 +18,9 @@ body {
 a {
   text-decoration: none;
   color: white;
+}
+.owl-carousel{
+  .ng-tns-c1-3{
+    margin: 40px 10px !important;
+  }
 }

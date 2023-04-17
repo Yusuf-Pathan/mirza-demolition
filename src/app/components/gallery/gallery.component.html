@@ -1,0 +1,31 @@
+<div class="gallery-wrapper" data-aos-duration="3000" data-aos-easing="linear">
+  <div class="heading-wrapper" data-aos="fade-left" data-aos-duration="3000">
+    <h2>gallery</h2>
+  </div>
+  <div class="raw-wrapper">
+    <div class="content-wrapper">
+      <div class="about">
+        <h2>gallery images</h2>
+        <h4>
+          Dont miss an out on the latest news anout construction tips, and
+          technology.
+        </h4>
+        <div class="icons-wrapper">
+            <mat-icon>keyboard_arrow_left</mat-icon>
+          <mat-icon>keyboard_arrow_right</mat-icon>
+        </div>
+      </div>
+      <div
+      
+        class="images"
+        data-aos="flip-left"
+        data-aos-easing="ease-out-cubic"
+        data-aos-duration="3000"
+        *ngFor="let img of images"
+      >
+        <img [src]="img.Img" alt="construction" />
+      </div>
+    </div>
+  </div>
+</div>
+
