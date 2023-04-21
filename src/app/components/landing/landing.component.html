@@ -1,31 +1,49 @@
 <div class="landing-wrapper">
-  <div class="video-background-wrapper">
-    <video
-      src="https://css-tricks-post-videos.s3.us-east-1.amazonaws.com/blurry-trees.mov"
-      autoplay
-      loop
-      playsinline
-      muted
-      class="background-video"
-    ></video>
+  <div class="main-wrapper">
+    <div class="video-background-wrapper">
+      <video
+        [src]="videos[0].videoURL"
+        [autoplay]="true"
+        [loop]="true"
+        [muted]="true"
+        playsinline
+        class="background-video"
+      ></video>
+    </div>
+    <div class="content-wrapper">
+      <div class="sub-title-wrapper">
+        <h3>Trusted and Efficient</h3>
+      </div>
+      <div class="title-wrapper">
+        <h1>Building Demolition Contractors</h1>
+      </div>
+      <div class="button-wrapper">
+        <button mat-fab extended color="primary">
+          <mat-icon>favorite</mat-icon>
+          Enquire Now
+        </button>
+      </div>
+    </div>
   </div>
-
-  <div>
-    <app-category></app-category>
+  <div class="work-section">
+    <app-works></app-works>
+  </div>
+  <div class="about-us-section">
     <app-about></app-about>
+  </div>
+  <!-- <div class="category-section">
+    <app-category></app-category>
+  </div> -->
+  <div class="gallery-section">
     <app-gallery></app-gallery>
+  </div>
+  <div class="video-gallery-section">
     <app-video></app-video>
-    <div class="review-wrapper">
-       <app-review></app-review>
-    </div>
-    <div class="work-wrapper">
-       <app-works></app-works>
-    </div>
-    <div class="contact-wrapper">
-        <app-contact></app-contact>
-    </div>
-    <div class="footer">
-       <app-footer></app-footer>
-    </div>
+  </div>
+  <div class="review-section">
+    <app-review></app-review>
+  </div>
+  <div class="contact-section">
+    <app-contact></app-contact>
   </div>
 </div>

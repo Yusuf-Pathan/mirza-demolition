@@ -1,160 +1,169 @@
-
-<div class="work-container">
-  <div class="cards-wrapper">
-    <div class="first-raw">
-      <mat-card class="vert-move">
-        <div class="container">
-          <div class="image-wrapper" *ngFor="let img of images">
-            <img [src]="img.image" alt="" />
-          </div>
-          <div class="content">
-            <span class="intro">
-              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempore
-              at ducimus unde tempora ipsam quasi. Lorem ipsum dolor sit amet.
-            </span>
-            <span class="about">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-              Veritatis tempore aut repellat blanditiis aliquid! Lorem ipsum
-              dolor sit amet.
-            </span>
-            <div class="content-footer">
-              <div class="wrapperimg">
-                <div class="bio-wrapper">
-                  <img
-                    src="https://img.freepik.com/free-photo/handsome-cheerful-man-with-happy-smile_176420-18028.jpg"
-                    alt=""
-                  />
-                </div>
-                <h4>alexander parkinson</h4>
-                <h4>jun 20 , 2019</h4>
+<div class="work-wrapper">
+  <div class="card-wrapper vert-move">
+    <mat-card class="vert-move" *ngFor="let user of users">
+      <div class="container">
+        <div class="image-wrapper">
+          <img [src]="user.image" alt="" />
+        </div>
+        <div class="content">
+          <div class="card-profile-wrapper">
+            <div class="wrapperimg">
+              <div class="bio-wrapper">
+                <img [src]="user.profileImage" alt="profile image" />
               </div>
-              <div class="icon-wrapper">
-                <mat-icon>reply</mat-icon>
-              </div>
+              <h4>{{ user.fullName }}</h4>
+              <h4>{{ user.date }}</h4>
             </div>
           </div>
+          <span class="about">
+            {{ user.shortDetail }}
+          </span>
         </div>
-      </mat-card>
-      <mat-card class="visit-card vert-move">
+      </div>
+    </mat-card>
+
+    <mat-card class="visit-card vert-move">
+      <mat-card-content>
+        <div class="least-wrapper">
+          <li><mat-icon> email</mat-icon><span>Email</span></li>
+          <li><mat-icon>person</mat-icon><span>person</span></li>
+          <li><mat-icon>share</mat-icon><span>share</span></li>
+          <li>
+            <mat-icon>radio_button_unchecked</mat-icon><span>Global</span>
+          </li>
+          <li>
+            <mat-icon> local_shipping</mat-icon
+            ><span><span>Transpot</span></span>
+          </li>
+        </div>
+      </mat-card-content>
+    </mat-card>
+  </div>
+  <div class="second-raw">
+    <div class="introduction vert-move">
+      <mat-card class="item1 vert-move">
+        <mat-card-header>
+          <img
+            src="https://media.istockphoto.com/id/1150866865/vector/building-construction-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=tPdvj_a9w44RF81a35v-5uasbe2bcSanKu9qVS4MNaY="
+            alt=""
+          />
+        </mat-card-header>
         <mat-card-content>
-          <div class="least-wrapper">
-            <li><mat-icon> email</mat-icon><span>Email</span></li>
-            <li><mat-icon>person</mat-icon><span>person</span></li>
-            <li><mat-icon>share</mat-icon><span>share</span></li>
-            <li>
-              <mat-icon>radio_button_unchecked</mat-icon><span>Global</span>
-            </li>
-            <li>
-              <mat-icon> local_shipping</mat-icon
-              ><span><span>Transpot</span></span>
-            </li>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit,
+            modi.
+          </p>
+          <div class="name-wrapper">
+            <div class="logo">
+              <img
+                src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1LzM2Ni1tai03NzAzLWZvbi1qai5qcGc.jpg"
+                alt=""
+              />
+            </div>
+            <div class="lower-content">
+              <span>Yusuf pathan</span>
+              <span>july 13 , 2018</span>
+            </div>
           </div>
         </mat-card-content>
       </mat-card>
     </div>
-    <div class="second-raw">
-      <div class="introduction">
-        <mat-card class="item1 vert-move">
+    <div class="calculation vert-move">
+      <div class="dates">
+        <mat-card class="item2 vert-move">
           <mat-card-header>
-              <img src="https://media.istockphoto.com/id/1150866865/vector/building-construction-flat-vector-illustration.jpg?s=612x612&w=0&k=20&c=tPdvj_a9w44RF81a35v-5uasbe2bcSanKu9qVS4MNaY=" alt="">
+            <div class="input-wrapper">
+              <input matInput value="" /><mat-icon>search</mat-icon>
+            </div>
           </mat-card-header>
-          <mat-card-content>
-              <p>
-                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugit, modi.
-              </p>
-              <div class="name-wrapper">
-                   <div class="logo">
-                     <img src="https://images.rawpixel.com/image_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA1LzM2Ni1tai03NzAzLWZvbi1qai5qcGc.jpg" alt="">
-                   </div>
-                    <div class="lower-content">
-                        <span>Yusuf pathan</span>
-                        <span>july 13 , 2018</span>
-                    </div>
+          <mat-card-actions>
+            <span>#politcs</span> <span>#price</span> <span>#country</span>
+            <span>#contact</span>
+          </mat-card-actions>
+        </mat-card>
+        <mat-card class="item3 vert-move">
+          <mat-card-header>
+            <div class="background-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+                alt=""
+              />
+            </div>
+          </mat-card-header>
+          <mat-card-actions>
+            <div class="video-content">
+              <div class="circle">
+                <mat-icon>play_circle_outline</mat-icon>
               </div>
-          </mat-card-content>
+              <h4>An inspiring short film</h4>
+              <span><mat-icon>visibility</mat-icon><b>80,938</b></span>
+            </div>
+          </mat-card-actions>
         </mat-card>
       </div>
-      <div class="calculation">
-        <div class="dates">
-          <mat-card class="item2 vert-move">
-            <mat-card-header>
-                <div class="input-wrapper">
-                  <input matInput  value=""><mat-icon>search</mat-icon>
-                </div>
-            </mat-card-header>
-            <mat-card-actions>
-                 <span>#politcs</span> <span>#price</span> <span>#country</span> <span>#contact</span>
-            </mat-card-actions>
-          </mat-card>
-          <mat-card class="item3 vert-move">
-            <mat-card-header>
-                <div class="background-wrapper">
-                  <img src="https://images.unsplash.com/photo-1531971589569-0d9370cbe1e5?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
-                </div>
-            </mat-card-header>
-            <mat-card-actions>
-                <div class="video-content">
-                   <div class="circle">
-                    <mat-icon>play_circle_outline</mat-icon>
-                   </div>
-                   <h4>An inspiring short film</h4>
-                   <span><mat-icon>visibility</mat-icon><b>80,938</b></span>
-                </div>
-            </mat-card-actions>
-          </mat-card>
-        </div>
-        <div class="last-raw ">
-          <mat-card class="item4 vert-move">
-            <mat-card-header>
-               <div class="man-img-wrapper">
-                   <img src="https://images.unsplash.com/photo-1541752171745-4176eee47556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="">
-               </div>
-            </mat-card-header>
-            <mat-card-actions>
-               <div class="first-raw">
-                    <span class="personal-info">Yusuf pathan</span><span class="ejucation">Senior Devloper</span>
-               </div>
-               <div class="second-raw">
-                     <section>
-                          <span>Article34 <h1>34</h1></span>
-                          <span>Followers <h1>980</h1></span>
-                          <span>ratingh1 <h1>8.9</h1></span>
-                     </section>
-               </div>
-               <div class="third-raw">
-                  <section>
-                       <button class="white" mat-raised-button>CHAT</button>
-                       <button class="blue" mat-raised-button>FOLLOW</button>
-                  </section>
-               </div>
-            </mat-card-actions>
-          </mat-card>
-          <mat-card class="item5">
-            <mat-card-header>
-                  <div class="arror-wrapper">
-                       <div class="left-arrow">
-                        <mat-icon>keyboard_arrow_left</mat-icon>
-                       </div>
-                       <div class="right-arrow">
-                        <mat-icon>keyboard_arrow_right</mat-icon>
-                       </div>
-                  </div>
-            </mat-card-header>
-            <mat-card-actions>
-                  <div class="option-wrapper">
-                        <div class="upper-raw">
-                            <span class="devloper">Yusuf Mirza</span>
-                            <span class="country">IND</span>
-                        </div>
-                        <div class="bottom-raw">
-                            <span>devloper</span>
-                            <span>2023</span>
-                        </div>
-                        
-                  </div>
-            </mat-card-actions>
-          </mat-card>
-        </div>
+      <div class="last-raw">
+        <mat-card class="item4 vert-move">
+          <mat-card-header>
+            <div class="man-img-wrapper">
+              <img
+                src="https://images.unsplash.com/photo-1541752171745-4176eee47556?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+                alt=""
+              />
+            </div>
+          </mat-card-header>
+          <mat-card-actions>
+            <div class="first-raw">
+              <span class="personal-info">Yusuf pathan</span
+              ><span class="ejucation">Senior Devloper</span>
+            </div>
+            <div class="second-raw">
+              <section>
+                <span
+                  >Article34
+                  <h1>34</h1></span
+                >
+                <span
+                  >Followers
+                  <h1>980</h1></span
+                >
+                <span
+                  >ratingh1
+                  <h1>8.9</h1></span
+                >
+              </section>
+            </div>
+            <div class="third-raw">
+              <section>
+                <button class="white" mat-raised-button>CHAT</button>
+                <button class="blue" mat-raised-button>FOLLOW</button>
+              </section>
+            </div>
+          </mat-card-actions>
+        </mat-card>
+        <mat-card class="item5 vert-move">
+          <mat-card-header>
+            <div class="arror-wrapper">
+              <div class="left-arrow">
+                <mat-icon>keyboard_arrow_left</mat-icon>
+              </div>
+              <div class="right-arrow">
+                <mat-icon>keyboard_arrow_right</mat-icon>
+              </div>
+            </div>
+          </mat-card-header>
+          <mat-card-actions>
+            <div class="option-wrapper vert-move">
+              <div class="upper-raw">
+                <span class="devloper">Yusuf Mirza</span>
+                <span class="country">IND</span>
+              </div>
+              <div class="bottom-raw">
+                <span>devloper</span>
+                <span>2023</span>
+              </div>
+            </div>
+          </mat-card-actions>
+        </mat-card>
       </div>
     </div>
   </div>

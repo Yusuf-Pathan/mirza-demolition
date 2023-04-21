@@ -8,7 +8,10 @@ import { Component } from '@angular/core';
 export class LandingComponent {
   videos: any = [
     {
-      videoURL: '../assets/videos/landing-page.mp4',
+      videoURL: '../assets/videos/house_down.mp4',
+    },
+    {
+      videoURL: '../assets/videos/video-0.mp4',
     },
   ];
 }

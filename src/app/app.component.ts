@@ -11,6 +11,8 @@ import {
   animations: [fadeInOnEnterAnimation(), fadeOutOnLeaveAnimation()],
 })
 export class AppComponent implements OnInit {
+  isMobileDisplay = false; // needs to be true when the user comes with mobile.
+
   constructor() {}
 
   ngOnInit(): void {}

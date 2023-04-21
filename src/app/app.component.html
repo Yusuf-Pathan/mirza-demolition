@@ -29,46 +29,54 @@
       <hr />
     </mat-sidenav>
 
-    <mat-sidenav-content class="navbar-wrapper"  [@fadeInOnEnter] [@fadeOutOnLeave]>
-      <mat-toolbar class="toolbar">
-        <header>
-          <nav class="nav-container">
-            <div class="nav-option-wrapper">
-              <div class="icon-wrapper">
-                <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+    <mat-sidenav-content
+      class="navbar-wrapper"
+      [@fadeInOnEnter]
+      [@fadeOutOnLeave]
+    >
+      <app-sticky-header>
+        <mat-toolbar class="toolbar">
+          <header>
+            <nav class="nav-container">
+              <div class="nav-option-wrapper">
+                <div class="icon-wrapper" *ngIf="isMobileDisplay">
+                  <mat-icon (click)="sidenav.toggle()">menu</mat-icon>
+                </div>
+                <div class="link-wrapper">
+                  <a routerLink="home" routerLinkActive="active">Home</a>
+                  <a routerLink="about" routerLinkActive="active">About</a>
+                  <a routerLink="contact" routerLinkActive="active">Contact</a>
+                  <a routerLink="contact" routerLinkActive="active">Help</a>
+                </div>
               </div>
-              <div class="link-wrapper">
-                <a routerLink="home" routerLinkActive="active">Home</a>
-                <a routerLink="about" routerLinkActive="active">About</a>
-                <a routerLink="contact" routerLinkActive="active">Contact</a>
-                <a routerLink="contact" routerLinkActive="active">Help</a>
-              </div>
-            </div>
 
-            <div class="nav-option-wrapper">
-              <div class="heading-wrapper">
-                <h1>Mirza Demolition</h1>
+              <div class="nav-option-wrapper">
+                <div class="heading-wrapper">
+                  <a>Mirza Demolition</a>
+                </div>
               </div>
-            </div>
 
-            <div class="nav-option-wrapper">
-              <div class="link-wrapper">
-                <a routerLink="home" routerLinkActive="active">Video</a>
-                <a routerLink="home" routerLinkActive="active">Images</a>
-                <a routerLink="login" routerLinkActive="active">Contact Us</a>
-                <a routerLink="login" routerLinkActive="active">Login</a>
-                <a routerLink="sign-up" routerLinkActive="active">Sign Up</a>
+              <div class="nav-option-wrapper">
+                <div class="link-wrapper">
+                  <a routerLink="home" routerLinkActive="active">Video</a>
+                  <a routerLink="home" routerLinkActive="active">Images</a>
+                  <a routerLink="login" routerLinkActive="active">Contact Us</a>
+                  <a routerLink="login" routerLinkActive="active">Login</a>
+                  <a routerLink="sign-up" routerLinkActive="active">Sign Up</a>
+                </div>
               </div>
-            </div>
-          </nav>
-        </header>
-      </mat-toolbar>
+            </nav>
+          </header>
+        </mat-toolbar>
+      </app-sticky-header>
 
       <section class="router-wrapper">
         <router-outlet></router-outlet>
       </section>
 
-      <section>Footer</section>
+      <section class="footer-section">
+        <app-footer></app-footer>
+      </section>
     </mat-sidenav-content>
   </mat-sidenav-container>
 </div>

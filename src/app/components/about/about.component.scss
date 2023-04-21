@@ -5,9 +5,9 @@
   .content-wrapper {
     display: flex;
     padding: 0px 30px;
-    .image-wraper {
+    .image-wrapper {
       width: 50%;
-      justify-content: end;
+      justify-content: flex-end;
       display: flex;
       align-items: center;
       img {
@@ -43,5 +43,5 @@
       }
     }
   }
-  
+
 }

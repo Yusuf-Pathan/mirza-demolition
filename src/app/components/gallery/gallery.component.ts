@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as AOS from 'aos';
-import { OwlOptions } from 'ngx-owl-carousel-o';
+
 @Component({
   selector: 'app-gallery',
   templateUrl: './gallery.component.html',
@@ -18,7 +18,7 @@ export class GalleryComponent implements OnInit{
       Img: 'https://www.shutterstock.com/image-vector/shops-stores-exteriors-laundry-restaurant-260nw-1927034612.jpg',
     },
   ];
-  
+
   ngOnInit(): void {
     AOS.init({ disable: 'mobile' });
     AOS.refresh();
