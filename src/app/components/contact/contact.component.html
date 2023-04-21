@@ -1,0 +1,42 @@
+
+<div class="contact-wrapper">
+  <section>
+    <div class="circle"></div>
+    <div class="circle2"></div>
+    <mat-card>
+      <mat-card-header>
+        <div class="first-raw">
+          <h2>
+            Describe your product idea and we will start working on it<span
+              >within 24 hours.</span
+            >
+          </h2>
+          <H2>
+            Contact us
+          </H2>
+        </div>
+      </mat-card-header>
+      
+         <form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+            <mat-card-content>
+              <div class="aboutself">
+                   <div class="names">
+                    <input  matInput  formControlName="firstName" type="text" placeholder="Name"> 
+                    <input  matInput  formControlName="LastName" type="text" placeholder="Last Name">
+                   </div>
+                   <div class="emails">
+                    <input  matInput formControlName="Emails" type="text" placeholder="Emails">
+                    <input  matInput  formControlName="Company" type="text" placeholder="Company">
+                   </div>
+              </div>
+              <div class="details">
+                <textarea matInput formControlName="request" placeholder="Your request"></textarea>
+              </div>
+            </mat-card-content>
+            <mat-card-footer>
+                <button mat-raised-button  type="submit">Send message</button>
+            </mat-card-footer>
+         </form>
+    </mat-card>
+  </section>
+</div>

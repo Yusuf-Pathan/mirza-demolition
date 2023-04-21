@@ -15,9 +15,14 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { AboutComponent } from './components/about/about.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
 import { VideoComponent } from './components/video/video.component';
+import { ReviewComponent } from './components/review/review.component';
+import { WorksComponent } from './components/works/works.component';
+import { ContactComponent } from './components/contact/contact.component';
+import { ReactiveFormsModule , FormsModule} from '@angular/forms';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, CategoryComponent, AboutComponent, GalleryComponent, VideoComponent],
+  declarations: [AppComponent, LandingComponent, CategoryComponent, AboutComponent, GalleryComponent, VideoComponent, ReviewComponent, WorksComponent, ContactComponent, FooterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,7 +33,9 @@ import { VideoComponent } from './components/video/video.component';
     MatIconModule,
     MatButtonModule,
     MatCardModule,
-    CarouselModule
+    CarouselModule,
+    ReactiveFormsModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent],

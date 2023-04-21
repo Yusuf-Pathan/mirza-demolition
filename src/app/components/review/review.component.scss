@@ -1,0 +1,86 @@
+.reviews-wrapper {
+  background-image: url("https://demos.creative-tim.com/now-ui-kit-pro-angular/assets/img/bg51.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 3% 0px;
+  width: 100%;
+  
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+  .row {
+    text-align: center;
+    width: 100%;
+    margin: 3% 0px;
+    color: rgba(0, 0, 0, 0.8);
+    h1 {
+      font-size: 32px;
+    }
+    p {
+      font-size: 21px;
+      width: 50%;
+      margin: 0 auto;
+    }
+  }
+  .example-card {
+    max-width: 400px;
+    border-radius: 13px;
+    .contents-wrapper {
+      padding: 9px ;
+      background-color: black;
+      font-family: inherit ;
+      font-weight: 300 ;
+      text-transform: capitalize;
+      border-bottom-left-radius: 13px;
+      border-bottom-right-radius: 13px;
+
+      mat-card-content{
+        margin: 10px 0px;
+          .name {
+            display: flex;
+            flex-direction: column;
+            margin: 4px 0px;
+            font-size: 22px;
+          }
+          span{
+            display: flex;
+            flex-direction: column;
+            font-size: 13px;
+            margin: 5px 0px;
+          }
+          .ratting-wrapper{
+             display: flex !important;
+             flex-direction: row !important;
+             mat-icon{
+                color: gold;
+             }
+          }
+      }
+      mat-card-actions{
+        justify-content: space-between;
+        button{
+            width: 173px;
+            background: #ff038b;
+            border-radius: 14px;
+        }
+        .icon-wrapper{
+            width: 44px;
+            height: 43px;
+            background: #342f2f;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 21px;
+            color: red;
+        }
+      }
+    }
+  }
+
+  .example-header-image {
+    background-image: url("https://material.angular.io/assets/img/examples/shiba1.jpg");
+    background-size: cover;
+  }
+}

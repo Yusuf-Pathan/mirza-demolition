@@ -24,3 +24,15 @@ a {
     margin: 40px 10px !important;
   }
 }
+.owl-item{
+  width: 390.5px !important;
+   .circle-img{
+        position: absolute !important;
+        width: 34% !important;
+        top: -10px;
+        left: -8px ;
+        img{
+            width: 44% !important;
+        }
+    } 
+}
