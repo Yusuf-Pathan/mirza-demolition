@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule } from "@angular/core";
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,9 +20,13 @@ import { WorksComponent } from './components/works/works.component';
 import { ContactComponent } from './components/contact/contact.component';
 import { ReactiveFormsModule , FormsModule} from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
+import { StickyHeaderComponent } from './components/sticky-header/sticky-header.component';
+import { LinkComponent } from './website-components/link/link.component';
+
+
 
 @NgModule({
-  declarations: [AppComponent, LandingComponent, CategoryComponent, AboutComponent, GalleryComponent, VideoComponent, ReviewComponent, WorksComponent, ContactComponent, FooterComponent],
+  declarations: [AppComponent, LandingComponent, CategoryComponent, AboutComponent, GalleryComponent, VideoComponent, ReviewComponent, WorksComponent, ContactComponent, FooterComponent, StickyHeaderComponent, LinkComponent, ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -35,7 +39,7 @@ import { FooterComponent } from './components/footer/footer.component';
     MatCardModule,
     CarouselModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

@@ -29,7 +29,11 @@
       <hr />
     </mat-sidenav>
 
-    <mat-sidenav-content class="navbar-wrapper"  [@fadeInOnEnter] [@fadeOutOnLeave]>
+    <mat-sidenav-content
+      class="navbar-wrapper"
+      [@fadeInOnEnter]
+      [@fadeOutOnLeave]
+    >
       <mat-toolbar class="toolbar">
         <header>
           <nav class="nav-container">
@@ -44,20 +48,58 @@
                 <a routerLink="contact" routerLinkActive="active">Help</a>
               </div>
             </div>
-
             <div class="nav-option-wrapper">
               <div class="heading-wrapper">
                 <h1>Mirza Demolition</h1>
               </div>
             </div>
-
             <div class="nav-option-wrapper">
               <div class="link-wrapper">
-                <a routerLink="home" routerLinkActive="active">Video</a>
-                <a routerLink="home" routerLinkActive="active">Images</a>
-                <a routerLink="login" routerLinkActive="active">Contact Us</a>
-                <a routerLink="login" routerLinkActive="active">Login</a>
-                <a routerLink="sign-up" routerLinkActive="active">Sign Up</a>
+                <li>
+                  <a routerLink="home" routerLinkActive="active">
+                    <i class="fa fa-clone"></i> Services</a
+                  >
+                  <div class="sub-menu-1">
+                    <ul>
+                      <li><a routerLink="links">building demolition</a></li>
+                      <li><a routerLink="links">HIGH REACH DEMOLITION</a></li>
+                      <li><a routerLink="links">ROBOTIC demolition</a></li>
+                      <li><a href="#">shead demolition</a></li>
+                      <li><a href="#">special demolition</a></li>
+                      <li><a href="#">all-type demolition</a></li>
+                      <li><a href="#">all-type excavator rate</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <a routerLink="home" routerLinkActive="active">
+                    <i class="fa-brands fa-buromobelexperte"></i> Experties</a
+                  >
+                  <div class="sub-menu-1">
+                    <ul>
+                      <li><a href="#">planet demolition</a></li>
+                      <li><a href="#">HIGH Rise building DEMOLITION</a></li>
+                      <li><a href="#">bridge demolition</a></li>
+                      <li><a href="#">banglow demolition</a></li>
+                      <li><a href="#">mass excavation</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li >
+                  <a routerLink="login"  routerLinkActive="active">
+                    <i class="fa fa-phone"></i> Contact Us</a
+                  >
+                </li>
+                <!-- <li>
+                  <a routerLink="login" routerLinkActive="active">
+                    <i class="fa fa-sign-out" aria-hidden="true"></i> Login</a>
+                </li>
+                <li>
+                  <a routerLink="sign-up" routerLinkActive="active">
+                    <i class="fa fa-sign-in" aria-hidden="true"></i>
+                     Sign Up</a
+                  >
+                </li> -->
               </div>
             </div>
           </nav>
