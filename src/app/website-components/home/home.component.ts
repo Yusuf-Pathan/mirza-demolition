@@ -14,7 +14,7 @@ import {
   MatTreeFlatDataSource,
   MatTreeFlattener,
 } from '@angular/material/tree';
-// import "../../../assets/images/surat.png"
+//  import "../../../assets/images/image-4.jpg"
 
 @Component({
   selector: 'app-home',
@@ -34,7 +34,7 @@ export class HomeComponent implements OnInit {
 
     setTimeout(() => {
       this.loader = false;
-    }, 1000);
+    }, 9000);
 
     setInterval(() => {
       this.current = ++this.current % this.img_list.length;
@@ -78,7 +78,7 @@ export class HomeComponent implements OnInit {
   // second start
   pictures: any = [
     {
-      img: 'https://devsdesign.net/products/html/konstruk/assets/images/about/style1/about.png',
+      img: '../../../assets/images/image-4.jpg',
     },
   ];
   //second end
@@ -86,42 +86,42 @@ export class HomeComponent implements OnInit {
   demolitioncard: any = [
      {
       firstsent: 'Genral Construction', 
-      back1: 'https://devsdesign.net/products/html/konstruk/assets/images/services/main-home/main-img/servic-1.jpg',
+      back1: '../../../assets/images/image-3.jpg',
       para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn:'Read More',
       img3: 'https://img.freepik.com/free-icon/demolition_318-405862.jpg?t=st=1682597462~exp=1682598062~hmac=cf583bbcf3b62192fa0d236497b7ee74af57bfd0b60fd3d2871be7eca30db2e7',
      },
      {
       firstsent: 'Property Maintenanse', 
-      back1: 'https://devsdesign.net/products/html/konstruk/assets/images/services/main-home/main-img/servic-2.jpg',
+      back1: '../../../assets/images/image-4.jpg',
       para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn:'Read More',
       img3: 'https://img.freepik.com/free-icon/head_318-371228.jpg?t=st=1682594625~exp=1682595225~hmac=0d10bc2d48e7084e0b1a2a99633e322c2c06748aaeec6062257ce9e580022fdc',
      },
      {
       firstsent: 'Project Manajment', 
-      back1: 'https://devsdesign.net/products/html/konstruk/assets/images/services/main-home/main-img/servic-3.jpg',
+      back1: '../../../assets/images/image-4.jpg',
       para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn:'Read More',
       img3: 'https://img.freepik.com/free-icon/cogwheel_318-503450.jpg?t=st=1682594421~exp=1682595021~hmac=55f2db6e4c29f7fe7687b4390eea80200c451017161b76136054e2220cf72364',
      },
      {
       firstsent: 'Virtual Design & Build', 
-      back1: 'https://devsdesign.net/products/html/konstruk/assets/images/services/main-home/main-img/servic-4.jpg',
+      back1: '../../../assets/images/image-4.jpg',
       para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn:'Read More',
       img3: 'https://img.freepik.com/free-icon/file_318-443752.jpg?t=st=1682594806~exp=1682595406~hmac=dce59a6fbd592f86bf25b86e10a24011149a82eb92a7906f66d6d88be2410dd5',
      },
      {
       firstsent: 'Preconstruction', 
-      back1: 'https://devsdesign.net/products/html/konstruk/assets/images/services/main-home/main-img/servic-5.jpg',
+      back1: '../../../assets/images/image-4.jpg',
       para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn:'Read More',
       img3: 'https://img.freepik.com/free-icon/payment-method_318-529437.jpg?t=st=1682596724~exp=1682597324~hmac=dc2fcba4cfe116d76fe75f17519a5131ed9779f023cbcf459453461e4e5d4e20',
      },
      {
       firstsent: 'Design & Build', 
-      back1: 'https://devsdesign.net/products/html/konstruk/assets/images/services/main-home/main-img/servic-6.jpg',
+      back1: '../../../assets/images/image-4.jpg',
       para: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn:'Read More',
       img3: 'https://img.freepik.com/free-icon/stats_318-174084.jpg?t=st=1682597025~exp=1682597625~hmac=69510aee9dae56f1e03149dfcddfc5aadc7929a454967d135467d51810624af4',
@@ -184,7 +184,7 @@ export class HomeComponent implements OnInit {
         'https://devsdesign.net/products/html/konstruk/assets/images/shape-1.png',
       subtext: ' YOUR BENEFIT',
       title: ' Build better futures with steady focus on quality',
-      img: 'https://devsdesign.net/products/html/konstruk/assets/images/choose/benefit/tabs-images.png',
+      img: '../../../assets/images/image-5.jpg',
       matpaneltitle1: 'We are a global family  that values diversity',
       matpaneltitle2: 'We on and shape our future',
       matpaneltitle3: 'We create sustainable growth',
@@ -206,32 +206,32 @@ export class HomeComponent implements OnInit {
   ];
   mprojects: any = [
     {
-      img: 'https://devsdesign.net/products/html/konstruk/assets/images/project/style1/1.jpg',
+      img: '../../../assets/images/image-3.jpg',
       projectstitle: 'Blue Glass Building',
       projectstag: 'Architecture',
     },
     {
-      img: 'https://devsdesign.net/products/html/konstruk/assets/images/project/style1/2.jpg',
+      img: '../../../assets/images/image-3.jpg',
       projectstitle: 'Ferguson Family YMCA',
       projectstag: 'Architecture',
     },
     {
-      img: 'https://devsdesign.net/products/html/konstruk/assets/images/project/style1/3.jpg',
+      img: '../../../assets/images/image-3.jpg',
       projectstitle: 'Stone Harbor',
       projectstag: 'House & Exterior',
     },
     {
-      img: 'https://devsdesign.net/products/html/konstruk/assets/images/project/style1/4.jpg',
+      img: '../../../assets/images/image-3.jpg',
       projectstitle: 'Hyatt Regency',
       projectstag: 'House & Exterior',
     },
     {
-      img: 'https://devsdesign.net/products/html/konstruk/assets/images/project/style1/5.jpg',
+      img: '../../../assets/images/image-3.jpg',
       projectstitle: 'Eisenhower Elementary',
       projectstag: 'Interiors',
     },
     {
-      img: 'https://devsdesign.net/products/html/konstruk/assets/images/project/style1/6.jpg',
+      img: '../../../assets/images/image-3.jpg',
       projectstitle: 'Edison Middle School',
       projectstag: 'Interiors',
     },

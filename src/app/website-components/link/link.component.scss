@@ -66,7 +66,7 @@
       width: 80%;
       display: flex;
       flex-direction: column;
-      justify-content: flex-end;
+      // justify-content: flex-end;
       .upper-content {
         gap: 20px;
         display: flex;
@@ -98,11 +98,11 @@
       width: 100%;
       display: flex;
       align-items: end;
-      justify-content: flex-end;
+      // justify-content: flex-end;
       img {
         width: 100%;
         display: flex;
-        justify-content: flex-end;
+        // justify-content: flex-end;
         margin-right: -50px !important;
       }
     }
