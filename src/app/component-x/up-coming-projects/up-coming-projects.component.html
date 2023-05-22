@@ -1,0 +1,31 @@
+<div class="section">
+  <div class="rs-cta">
+    <div class="container">
+      <div class="call-action">
+        <div
+          class="sec-title"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          *ngFor="let item of action"
+        >
+          <span class="sub-text">
+            <img [src]="item.logoimg" alt="" /> {{ item.logoname }}
+          </span>
+          <h2 class="title">
+            {{ item.paragraph }}
+          </h2>
+          <div class="desc">
+            {{ item.content }}
+          </div>
+          <div class="btn-part">
+            <a href="#">
+              {{ item.btn }}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

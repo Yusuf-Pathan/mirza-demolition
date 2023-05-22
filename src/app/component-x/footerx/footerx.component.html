@@ -1,0 +1,140 @@
+<section>
+  <div class="rs-footer" *ngFor="let item of footer">
+    <div
+      class="footer-top"
+      data-aos="fade-right"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="colume-1">
+            <div class="footer-logo">
+              <a href="#">
+                <img [src]="item.logoimg" alt="" />
+              </a>
+            </div>
+            <div class="textwidget">
+              <p class="p1">
+                {{ item.content }}
+              </p>
+              <p class="p2">
+                <strong>{{ item.timing2 }}</strong>
+                {{ item.timing }}
+              </p>
+            </div>
+            <ul class="footer-social">
+              <li>
+                <a href="#">
+                  <i class="fa fa-facebook"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-twitter"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-pinterest-p"></i>
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="colume-2">
+            <h3 class="footer-title">
+              {{ item.contactinfo }}
+            </h3>
+            <ul class="address-widget">
+              <li>
+                <mat-icon> location_on</mat-icon>
+                <div class="desc">
+                  {{ item.contactadd }}
+                </div>
+              </li>
+              <li>
+                <mat-icon> stay_current_portrait</mat-icon>
+                <div class="desc">
+                  <a href="#">{{ item.contactnumber }}</a> <br />
+                  <a href="#">{{ item.contactnumber2 }}</a>
+                </div>
+              </li>
+              <li>
+                <mat-icon>mail</mat-icon>
+                <div class="desc">
+                  <a href="#">{{ item.contactmail }} </a>
+                  <a href="#">{{ item.contactmail2 }}</a>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div class="colume-3">
+            <h3 class="footer-title"></h3>
+            <ul class="site-map">
+              <mat-tree [dataSource]="treeData">
+                <mat-tree-node *matTreeNodeDef="let node" matTreeNodeToggle>
+                  {{ node.name }}
+                  <mat-tree-node
+                    *ngFor="let child of node.children"
+                  ></mat-tree-node>
+                </mat-tree-node>
+              </mat-tree>
+            </ul>
+          </div>
+          <div class="colume-4">
+            <h3 class="footer-title">
+              {{ item.newsletter }}
+            </h3>
+            <p class="widget-desc">
+              {{ item.newsletter2 }}
+            </p>
+            <p>
+              <input
+                class="input"
+                placeholder="YOUR EMAIL ADDRESS"
+                type="text"
+              />
+              <input class="submit" type="submit" />
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="footer-bottom"
+      data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="raw1">
+            <div class="copyright">
+              <p>
+                {{ item.right }}
+                <a href="#">Technolgy</a>
+              </p>
+            </div>
+          </div>
+          <div class="raw2">
+            <ul class="copy-right-menu">
+              <li>{{ item.li1 }}</li>
+              <li>{{ item.li2 }}</li>
+              <li>{{ item.li3 }}</li>
+              <li>{{ item.li4 }}</li>
+              <li>{{ item.li5 }}</li>
+              <li>{{ item.li6 }}</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

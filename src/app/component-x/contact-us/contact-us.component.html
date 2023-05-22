@@ -1,0 +1,78 @@
+<section>
+  <div class="contact-wrapper" *ngFor="let item of conatct">
+    <section>
+      <div class="circle"></div>
+      <div class="circle2"></div>
+      <mat-card>
+        <mat-card-header>
+          <div class="first-raw">
+            <h2>
+              {{ item.describe }}
+            </h2>
+            <H2> {{ item.contact }}</H2>
+          </div>
+        </mat-card-header>
+        <form
+          [formGroup]="profileForm"
+          (ngSubmit)="onSubmit(profileForm.value)"
+        >
+          <mat-card-content>
+            <div class="aboutself">
+              <div class="names">
+                <input
+                  matInput
+                  formControlName="firstName"
+                  type="text"
+                  required
+                  name="firstName"
+                  placeholder="Name"
+                />
+                <input
+                  matInput
+                  formControlName="LastName"
+                  required
+                  type="text"
+                  name="LastName"
+                  placeholder="Last Name"
+                />
+              </div>
+              <div class="emails">
+                <input
+                  matInput
+                  formControlName="Emails"
+                  type="text"
+                  required
+                  name="Emails"
+                  placeholder="Emails"
+                />
+                <input
+                  matInput
+                  formControlName="Company"
+                  name="Company"
+                  required
+                  type="text"
+                  placeholder="Company"
+                />
+              </div>
+            </div>
+            <div class="details">
+              <textarea
+                matInput
+                formControlName="request"
+                name="request"
+                placeholder="Your request"
+              ></textarea>
+            </div>
+          </mat-card-content>
+          <mat-card-footer>
+            <a
+              href="mailto:stantarif006@gmail.com
+               "
+              ><button mat-raised-button type="submit">Send message</button></a
+            >
+          </mat-card-footer>
+        </form>
+      </mat-card>
+    </section>
+  </div>
+</section>

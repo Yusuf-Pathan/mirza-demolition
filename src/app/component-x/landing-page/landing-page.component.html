@@ -1,0 +1,53 @@
+<div class="home-wrapper">
+  <div class="content-wrapper">
+    <div class="style">
+      <div class="image-wrapper" *ngFor="let items of categories">
+        <carousel
+          [images]="images"
+          [cellsToShow]="1"
+          [loop]="true"
+          [autoplay]="false"
+          [autoplayInterval]="3000"
+        >
+        </carousel>
+        <div
+          class="about-company"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+        >
+          <div class="paragraph">
+            <div class="subtitle1">
+              <div class="h4-wrapper">
+                <img [src]="items.paragraphdesign" alt="" /> {{ items.title }}
+              </div>
+            </div>
+            <div class="subtitle2">
+              {{ items.subTitle1 }}
+              {{ items.subTitle2 }}
+            </div>
+            <div class="subtitle3">
+              {{ items.paragraph }}
+            </div>
+            <div class="subtitle4">
+              <div class="button-wrapper">
+                <a href="#">DISCOVER MORE</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="logo-wrapper"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+        >
+          <img [src]="items.logoimgyellow" alt="" />
+          <img [src]="items.logoimgblack" alt="" />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

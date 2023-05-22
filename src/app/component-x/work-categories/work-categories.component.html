@@ -1,0 +1,67 @@
+<div class="services-wrapper">
+  <div class="container" *ngFor="let matrial of categories">
+    <div
+      class="sec-title"
+      data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500"
+    >
+      <div class="sub-text">
+        <span>
+          <img [src]="matrial.paragraphdesign" alt="Images" />
+          What We Do
+        </span>
+      </div>
+      <h2 class="title">
+        Here Is Some Of Our
+        <p>Demolition Work And Projects</p>
+      </h2>
+    </div>
+    <div
+      class="raw"
+      data-aos="fade-right"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500"
+    >
+      <div class="column" *ngFor="let item of demolitioncard">
+        <div class="services-item">
+          <div class="item-wrapper">
+            <div class="img-wrapper">
+              <img [src]="item.back1" alt="" />
+            </div>
+            <div class="content-wrap">
+              <div class="inner-services">
+                <div class="icon-top">
+                  <img [src]="item.img3" alt="" />
+                </div>
+                <div class="title-icon">
+                  <h3 class="title">
+                    <a href="#">{{ item.firstsent }}</a>
+                  </h3>
+                </div>
+                <p>
+                  {{ item.para }}
+                </p>
+                <div class="btn">
+                  <a href="#">{{ item.btn }}</a>
+                </div>
+              </div>
+            </div>
+            <div class="normal-text-area">
+              <div class="title-icon">
+                <h3 class="title">
+                  <a href="#">{{ item.firstsent }}</a>
+                </h3>
+                <div class="icon-image">
+                  <img [src]="item.img3" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

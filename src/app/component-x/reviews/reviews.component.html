@@ -1,0 +1,184 @@
+<section>
+  <div class="rs-testimonal">
+    <div class="container">
+      <div class="row">
+        <div class="carousel-wrapper">
+          <div
+            class="sec-title"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+            *ngFor="let slide of slider"
+          >
+            <span class="sub-text">
+              <img [src]="slide.logoimg1" alt="" /> {{ slide.logoname1 }}
+            </span>
+            <h2 class="title">{{ slide.review1 }}</h2>
+          </div>
+          <div class="testi-item-content">
+            <div class="crousel" data-aos="fade-up-left">
+              <owl-carousel-o
+                [options]="customOptions"
+                (change)="setData($event)"
+              >
+                <ng-template carouselSlide>
+                  <mat-card *ngFor="let slide of slider" class="example-card">
+                    <img
+                      mat-card-image
+                      [src]="slide.item"
+                      alt="Photo of a Shiba Inu"
+                    />
+                    <div class="contents-wrapper">
+                      <mat-card-content class="first-content">
+                        <p>
+                          {{ slide.paragraph }}
+                        </p>
+                      </mat-card-content>
+                      <mat-card-content class="second-content">
+                        <div class="testy-content">
+                          <div class="img-wrapper">
+                            <img [src]="slide.paraimg" alt="" />
+                          </div>
+                        </div>
+                        <div class="testi-information">
+                          <div class="testi-name">
+                            {{ slide.imgname }}
+                          </div>
+                          <div class="testi-title">
+                            {{ slide.tagnmae }}
+                          </div>
+                        </div>
+                      </mat-card-content>
+                      <mat-card-actions>
+                        <div class="icons-wrapper">
+                          <div class="left-icon">
+                            <mat-icon>arrow_back</mat-icon>
+                          </div>
+                          <div class="right-icon">
+                            <mat-icon>arrow_forward</mat-icon>
+                          </div>
+                        </div>
+                      </mat-card-actions>
+                    </div>
+                  </mat-card>
+                </ng-template>
+              </owl-carousel-o>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secondrow">
+        <div
+          class="sec-title"
+          data-aos="fade-right"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+          *ngFor="let slide of slider"
+        >
+          <span class="sub-text">
+            <img [src]="slide.logoimg1" alt="" /> {{ slide.logoname1 }}
+          </span>
+          <h2 class="title">{{ slide.review1 }}</h2>
+        </div>
+        <div
+          class="vertical-widget-content"
+          data-aos="zoom-out-right"
+          *ngFor="let slide of slider2"
+        >
+          <div class="slick-part">
+            <div class="slider-for slick-initialized">
+              <div class="slick-list">
+                <div class="slick-track">
+                  <div class="team-inner-wrap">
+                    <div class="image-wrap">
+                      <a href="#">
+                        <img [src]="slide.secondcarousel1" alt="" />
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="slider-navs">
+                  <div class="left-buttons">
+                    <mat-icon
+                      _ngcontent-wns-c63=""
+                      role="img"
+                      class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                      aria-hidden="true"
+                      data-mat-icon-type="font"
+                      >arrow_back</mat-icon
+                    >
+                  </div>
+                  <div class="draggable">
+                    <div class="slick-track">
+                      <div class="image-list">
+                        <a href="#">
+                          <img
+                            src="https://devsdesign.net/products/html/konstruk/assets/images/team/tm6.jpg"
+                            alt=""
+                          />
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="button">
+                    <mat-icon
+                      _ngcontent-wns-c63=""
+                      role="img"
+                      class="mat-icon notranslate material-icons mat-ligature-font mat-icon-no-color"
+                      aria-hidden="true"
+                      data-mat-icon-type="font"
+                      >arrow_forward</mat-icon
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="rs-partners">
+      <div class="containers">
+        <div class="partner-content-widgets">
+          <owl-carousel-o [options]="customOptions">
+            <ng-container carouselSlide>
+              <ng-template
+                class="slide"
+                carouselSlide
+                *ngFor="let slides of slider3"
+              >
+                <div class="img-wrappers">
+                  <div class="logo-img">
+                    <a href="#">
+                      <img
+                        [src]="slides.secondcarousel1"
+                        class="hover"
+                        [alt]=""
+                        [title]="" />
+                      <img
+                        [src]="slides.secondcarousel1"
+                        [alt]=""
+                        class="main"
+                        [title]=""
+                    /></a>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+          <!-- <div class="sliders">
+              <ng-container >
+                <div class="slider"  @fade>
+                   <div class="img-wrapper-carousel" *ngFor="let img of img_list; let i = index">
+                     <img class="img" *ngIf="current == i" [src]="img.path">
+                   </div>
+                </div>
+              </ng-container>
+            </div> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

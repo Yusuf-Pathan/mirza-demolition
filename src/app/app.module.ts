@@ -18,11 +18,26 @@ import { VideoComponent } from './components/video/video.component';
 import { ReviewComponent } from './components/review/review.component';
 import { WorksComponent } from './components/works/works.component';
 import { ContactComponent } from './components/contact/contact.component';
-import { ReactiveFormsModule , FormsModule} from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { FooterComponent } from './components/footer/footer.component';
-
+import { StickyHeaderComponent } from './components/sticky-header/sticky-header.component';
+import { LinkComponent } from './redirect-path/link.component';
+import { IvyCarouselModule } from 'angular-responsive-carousel';
 @NgModule({
-  declarations: [AppComponent, LandingComponent, CategoryComponent, AboutComponent, GalleryComponent, VideoComponent, ReviewComponent, WorksComponent, ContactComponent, FooterComponent],
+  declarations: [
+    AppComponent,
+    LandingComponent,
+    CategoryComponent,
+    AboutComponent,
+    GalleryComponent,
+    VideoComponent,
+    ReviewComponent,
+    WorksComponent,
+    ContactComponent,
+    FooterComponent,
+    StickyHeaderComponent,
+    LinkComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -35,7 +50,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MatCardModule,
     CarouselModule,
     ReactiveFormsModule,
-    FormsModule
+    FormsModule,
+    IvyCarouselModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

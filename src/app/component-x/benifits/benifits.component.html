@@ -1,0 +1,99 @@
+<div class="rs-choose">
+  <div class="row" *ngFor="let skill of choose">
+    <div class="video-wrapper" data-aos="zoom-out-right">
+      <div class="rs-video">
+        <div class="animate-border">
+          <a
+            href="https://www.youtube.com/watch?v=FMvA5fyZ338"
+            class="popup-border"
+          >
+            <mat-icon>play_arrow</mat-icon>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="video-content-wrapper">
+      <div class="widget-wrap-content">
+        <div
+          class="sec-title"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+        >
+          <span class="sub-text">
+            <span>
+              <img [src]="skill.subimg" alt="" /> {{ skill.subtext }}
+            </span>
+          </span>
+          <h2 class="title">
+            {{ skill.title }}
+          </h2>
+          <p class="desc">
+            {{ skill.paragraph }}
+          </p>
+          <div class="row-wrapper">
+            <div class="row" *ngFor="let item of service">
+              <div class="mini-card1">
+                <div class="service-item">
+                  <div class="serial-number">
+                    {{ item.serialnumber }}
+                  </div>
+                  <div class="services-textes">
+                    <div class="services-title">
+                      <h4 class="title">
+                        {{ item.servicestext }}
+                      </h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="working-skill-part">
+            <div class="rows">
+              <div class="title-wrapper">
+                <div class="title-inner">
+                  <h4 class="title">
+                    {{ skill.working }}
+                  </h4>
+                </div>
+                <div class="title-inner">
+                  <h4 class="title">
+                    {{ skill.clintrating }}
+                  </h4>
+                </div>
+              </div>
+              <div class="ratting-wrapper">
+                <div class="rs-skillbar">
+                  <div class="skill">
+                    <div class="skillbar">
+                      <p class="skillbar-bar"></p>
+                      <span class="skill-bar-percent">
+                        {{ skill.workpercentage }}
+                      </span>
+                    </div>
+                  </div>
+                </div>
+                <ul class="icon-list-item">
+                  <li><mat-icon>star</mat-icon></li>
+                  <li><mat-icon>star</mat-icon></li>
+                  <li><mat-icon>star</mat-icon></li>
+                  <li><mat-icon>star</mat-icon></li>
+                  <li><mat-icon>star</mat-icon></li>
+                </ul>
+              </div>
+            </div>
+            <p class="view-result">
+              {{ skill.footstrap }}
+              -
+              <a class="viewlink" href="#"
+                ><span>{{ skill.span }}</span></a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

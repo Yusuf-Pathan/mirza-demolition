@@ -1,0 +1,49 @@
+.rs-cta {
+  background: url("https://devsdesign.net/products/html/konstruk/assets/images/bg/cta-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 115px;
+  padding-top: 120px;
+  .container {
+    text-align: center;
+    color: white;
+    .call-action {
+      margin: 0 auto;
+      .sec-title {
+        width: 100%;
+        color: white !important;
+        .sub-text {
+          color: white;
+        }
+        H2 {
+          color: white !important;
+        }
+        .desc {
+          padding-bottom: 35px;
+          line-height: 25px;
+          font-size: 16px;
+          width: 60%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .btn-part {
+    a {
+      cursor: pointer;
+      display: inline-block;
+      position: relative;
+      font-size: 17px;
+      font-weight: 500;
+      line-height: 26px;
+      color: #ffffff;
+      background: #ffb703;
+      padding: 16px 35px 16px 35px;
+      z-index: 1;
+      border-radius: 0px 0px 0px 0px;
+      transition: all 0.4s ease-in-out 0s;
+      overflow: hidden;
+    }
+  }
+}
