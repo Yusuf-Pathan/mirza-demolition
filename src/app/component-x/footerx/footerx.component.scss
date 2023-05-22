@@ -1,0 +1,179 @@
+.rs-footer {
+  background-image: url("https://devsdesign.net/products/html/konstruk/assets/images/bg/footer-bg.jpg");
+  background-size: cover;
+  .footer-top {
+    padding: 85px 0 70px !important;
+    .container {
+      .row {
+        display: flex;
+        width: 100%;
+        .colume-1 {
+          padding-right: 20px;
+          width: 25%;
+          .footer-logo {
+            margin-bottom: 21px;
+            a {
+              img {
+                width: 100px;
+              }
+            }
+          }
+          .textwidget {
+            .p1 {
+              color: #ffffff;
+              margin: 0;
+              padding-bottom: 20px;
+              line-height: 1.6 !important;
+              font-size: 18px !important;
+            }
+            .p2 {
+              color: #ffffff;
+              margin: 0;
+              font-size: 17px;
+              padding-bottom: 25px;
+              line-height: 1.8 !important;
+            }
+          }
+          .footer-social {
+            list-style: outside none none;
+            margin: 0;
+            padding: 0;
+            li {
+              display: inline-block;
+              margin-right: 19px;
+              a {
+                i {
+                  font-size: 16px;
+                  margin-right: 3px;
+                  transition: all 0.8s ease;
+                  color: #fff;
+                  text-align: center;
+                }
+              }
+              li:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+        .colume-2 {
+          padding-right: 20px;
+          width: 25%;
+          .address-widget {
+            list-style: outside none none;
+            margin: 0;
+            padding: 5px 0 0 0;
+            li {
+              padding: 0 0 29px 40px;
+              position: relative;
+              mat-icon {
+                color: #ffb703;
+                position: absolute;
+                left: 0;
+              }
+              .desc {
+                color: white !important;
+                line-height: 1.7;
+                font-size: 17px;
+              }
+            }
+          }
+        }
+        .colume-3 {
+          padding-right: 20px;
+          width: 25%;
+        }
+        .colume-4 {
+          width: 25%;
+          .widget-desc {
+            margin: 0px 0px 27px 0;
+            color: #ffffff;
+            font-size: 17px;
+          }
+          p {
+            margin: 0 0 26px;
+            line-height: 1.8;
+            .input {
+              border: none;
+              font-size: 16px;
+              padding: 15px 20px;
+              width: calc(100% - 37px);
+              color: #fff;
+              overflow: hidden !important;
+              background: #333;
+              margin-bottom: 20px;
+            }
+            .submit {
+              position: relative;
+              border: none;
+              background: #ffb703;
+              color: #010d14;
+              padding: 16px 35px 16px;
+              font-weight: 500;
+              text-transform: uppercase;
+              font-size: 16px;
+              line-height: 26px;
+              width: 100% !important;
+              transition: all 0.3s;
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-bottom {
+    background: rgba(51, 51, 51, 0.4);
+    padding: 20px 0 20px 0;
+    .container {
+      .row {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        .raw1 {
+          width: 50%;
+          .copyright {
+            P {
+              font-size: 16px !important;
+              display: flex !important;
+              align-items: center !important;
+              margin-bottom: 0 !important;
+            }
+          }
+        }
+        .raw2 {
+          width: 50%;
+          display: flex;
+          text-decoration: none;
+          list-style: none;
+          font-size: 15px !important;
+          justify-content: center !important;
+          .copy-right-menu {
+            display: flex;
+            text-decoration: none;
+            list-style: outside none none;
+            margin: 0;
+            padding: 0;
+            li {
+              display: inline-block;
+              position: relative;
+              padding: 0px 19px 0 25px;
+              ::after {
+                display: block;
+                content: "";
+                position: absolute;
+                font-size: 18px;
+                background: #ffb703;
+                left: 0;
+                top: 50%;
+                width: 6px;
+                height: 6px;
+                transform: translateY(-50%);
+                border-radius: 50%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

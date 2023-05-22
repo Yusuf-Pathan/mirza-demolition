@@ -11,4 +11,6 @@ export class LandingComponent {
       videoURL: '../assets/videos/landing-page.mp4',
     },
   ];
+   
+
 }

@@ -1,0 +1,92 @@
+<div class="information-wrapper">
+  <div class="raw" *ngFor="let benefit of benefits">
+    <div class="benefits-wrapper">
+      <div class="faq-content">
+        <div
+          class="sec-title"
+          data-aos="fade-left"
+          data-aos-anchor="#example-anchor"
+          data-aos-offset="500"
+          data-aos-duration="500"
+        >
+          <div class="sub-text">
+            <span><img [src]="benefit.subimg" alt="" /></span>
+            {{ benefit.subtext }}
+          </div>
+          <div class="title">
+            {{ benefit.title }}
+          </div>
+        </div>
+        <div #accordion class="accordion">
+          <div
+            class="card"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
+            <mat-accordion>
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <span>+</span> {{ benefit.matpaneltitle1 }}
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+                <p>
+                  {{ benefit.matparagraph }}
+                </p>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+          <div
+            class="card"
+            data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500"
+          >
+            <mat-accordion>
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <span>+</span> {{ benefit.matpaneltitle2 }}
+                  </mat-panel-title>
+                  <!-- <mat-panel-description>
+                        This is a summary of the content
+                      </mat-panel-description> -->
+                </mat-expansion-panel-header>
+                <p>
+                  {{ benefit.matparagraph }}
+                </p>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+          <div class="card">
+            <mat-accordion>
+              <mat-expansion-panel hideToggle>
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <span>+</span> {{ benefit.matpaneltitle3 }}
+                  </mat-panel-title>
+                  <!-- <mat-panel-description>
+                        This is a summary of the content
+                      </mat-panel-description> -->
+                </mat-expansion-panel-header>
+                <p>
+                  {{ benefit.matparagraph }}
+                </p>
+              </mat-expansion-panel>
+            </mat-accordion>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div
+      class="image-wrapper"
+      data-aos="fade-right"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500"
+    ></div>
+  </div>
+</div>

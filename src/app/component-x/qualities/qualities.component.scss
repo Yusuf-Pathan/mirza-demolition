@@ -1,0 +1,46 @@
+.information-wrapper {
+  background: white;
+  .raw {
+    padding: 0 1.5rem;
+    display: flex;
+    .benefits-wrapper {
+      width: 50%;
+      .faq-content {
+        padding: 120px 60px 120px 35px;
+        .sec-title {
+          width: 100%;
+        }
+        inner-services .sub-text {
+          span {
+            img {
+              top: 1;
+            }
+          }
+        }
+        .mat-mdc-form-field + .mat-mdc-form-field {
+          margin-left: 8px;
+        }
+        .accordion {
+          .card {
+            mat-expansion-panel-header {
+              height: 60px !important;
+              font-size: 18px !important;
+              transition: 0.8s easy;
+              font-weight: 500;
+              background-color: #ffb703;
+              color: #010d14 !important;
+            }
+          }
+        }
+      }
+    }
+    .image-wrapper {
+      width: 50%;
+      background-image: url("../../../assets/images/image-5.jpg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      clip-path: polygon(9% 0, 100% 0, 100% 89%, 91% 100%, 0 100%, 0 11%);
+    }
+  }
+}

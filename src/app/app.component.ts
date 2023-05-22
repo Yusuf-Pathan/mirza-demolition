@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from "@angular/core";
+import { Component, Input, OnInit } from '@angular/core';
 import {
   fadeInOnEnterAnimation,
   fadeOutOnLeaveAnimation,
@@ -11,13 +11,9 @@ import {
   animations: [fadeInOnEnterAnimation(), fadeOutOnLeaveAnimation()],
 })
 export class AppComponent implements OnInit {
-  
   constructor() {}
   name = 'Angular';
   pages = new Array(5);
   ngOnInit(): void {}
-  
   clickHandler() {}
-
-
 }

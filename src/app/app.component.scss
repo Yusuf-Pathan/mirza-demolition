@@ -76,12 +76,14 @@
                           padding-left: 15px;
                           padding-right: 15px;
                           box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
-                          transition: 0.6s ease-in-out;
+                          transition: 0.7s ease-in-out;
                           &:hover {
                             color: white;
                             background-color: black;
-                            font-size: 14px;
-                            padding-left: 17px;
+                            transform: translatex(90px);
+                            // font-size: 14px;
+                            // padding-left: 17px;
+
                           }
                         }
                       }
@@ -102,7 +104,7 @@
                 justify-content: center;
                 align-items: center;
                 flex: 1;
-                h1 {
+                h2{
                   margin: 0;
                 }
               }

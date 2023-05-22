@@ -1,0 +1,77 @@
+.section-wrapper {
+  background-image: url("https://devsdesign.net/products/html/konstruk/assets/images/bg/about-bg.jpg");
+  .second-componet {
+    padding: 120px 0px;
+    .container {
+      .image {
+        width: 50%;
+        opacity: 0.4;
+        transition: 1s ease-in-out;
+        &:hover {
+          opacity: 1;
+        }
+        img {
+          width: 100% !important;
+          height: 100% !important;
+          object-fit: cover;
+          clip-path: polygon(15% 0, 100% 0, 100% 85%, 85% 100%, 0 100%, 0 15%);
+        }
+      }
+      .sec-title {
+        .content {
+          padding-left: 50px;
+          p {
+            font-size: 16px;
+            line-height: 24px;
+            font-weight: 400;
+            color: #333333;
+            margin: 0;
+            padding-bottom: 37px;
+          }
+          .middle-raw {
+            display: flex;
+            align-items: center;
+            .mini-img {
+              width: 29.333333%;
+              img {
+                max-width: 100%;
+              }
+            }
+            .cheak-list {
+              margin-left: 10px;
+              .list-item {
+                display: flex;
+                align-items: center;
+                padding-bottom: calc(6px);
+                span {
+                  display: flex;
+                  align-items: center;
+                  margin-right: 5px;
+                  mat-icon {
+                    color: #ffb703;
+                    font-size: 20px !important;
+                  }
+                }
+              }
+            }
+          }
+          .footer-wrapper {
+            margin-top: 47px;
+            display: flex;
+            align-items: center;
+            .button-wrapper {
+              width: 50%;
+              a {
+                background: #ffb703;
+                color: #010d14;
+                font-weight: 500;
+                text-transform: uppercase;
+                padding: 16px 34px 16px 34px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

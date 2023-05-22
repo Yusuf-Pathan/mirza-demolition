@@ -1,0 +1,79 @@
+<div class="section-wrapper">
+  <div class="second-componet">
+    <div class="container">
+      <div
+        class="image"
+        data-aos="fade-right"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500"
+        *ngFor="let image of pictures"
+      >
+        <img [src]="image.img" alt="" />
+      </div>
+      <div
+        class="sec-title"
+        data-aos="fade-left"
+        data-aos-anchor="#example-anchor"
+        data-aos-offset="500"
+        data-aos-duration="500"
+      >
+        <div class="content" *ngFor="let matrial of categories">
+          <div class="sub-text">
+            <span>
+              <img [src]="matrial.paragraphdesign" alt="Images" />
+              Who We Are
+            </span>
+          </div>
+          <h2 class="title">Construction solutions focused future ready</h2>
+          <p>
+            Leverage agile frameworks to provide a robust synopsis for high
+            level overviews. Iterative approaches to corporate strategy data
+            foster to collaborative thinking to empowerment.
+          </p>
+          <div class="middle-raw">
+            <div class="mini-img">
+              <img
+                src="https://devsdesign.net/products/html/konstruk/assets/images/about/style1/abzt.jpg"
+                alt=""
+              />
+            </div>
+            <div class="ul-wrapper">
+              <div class="cheak-list">
+                <li class="list-item">
+                  <span class="icon-list-icon">
+                    <mat-icon>check_circle</mat-icon>
+                  </span>
+                  <span class="list-text">Pre-construction services</span>
+                </li>
+                <li class="list-item">
+                  <span class="icon-list-icon">
+                    <mat-icon>check_circle</mat-icon>
+                  </span>
+                  <span class="list-text">Industrial manufacturing</span>
+                </li>
+                <li class="list-item">
+                  <span class="icon-list-icon">
+                    <mat-icon>check_circle</mat-icon>
+                  </span>
+                  <span class="list-text">Building and construction</span>
+                </li>
+              </div>
+            </div>
+          </div>
+          <div class="footer-wrapper">
+            <div class="button-wrapper">
+              <a href="#">KNOW MORE</a>
+            </div>
+            <div class="sign-wrapper">
+              <img
+                src="https://devsdesign.net/products/html/konstruk/assets/images/about/style1/signeture1.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

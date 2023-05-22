@@ -1,0 +1,43 @@
+<p>high-rise-building works!</p>
+<div #myContainer class="all-contain-wrapper">
+  <section class="nav-img" *ngFor="let item of images">
+    <div class="img-wrapper">
+      <img [src]="item.navimg" alt="" />
+      <div class="img-content">
+        <div class="content-raw">
+          <div class="title">
+            <h2>{{ item.demlolition }}</h2>
+          </div>
+          <div class="services">
+            <span>
+              <span
+                ><a href="">{{ item.services }}</a
+                >-<span>{{ item.page }}</span
+                >-<span>{{ item.demlolition }}</span></span
+              >
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="about-wrapper" *ngFor="let item of images">
+    <div class="content">
+      <div class="skill">
+        <div class="upper-content">
+          <span>{{ item.contenttitle }}</span>
+          <h2>{{ item.demlolition }}</h2>
+        </div>
+        <div class="mid-content">
+          <div class="first-paragraph">{{ item.firstparagraph }}</div>
+          <div class="second-paragraph">{{ item.secondparagraph }}</div>
+        </div>
+      </div>
+    </div>
+    <div class="content-image">
+      <div class="image-wrapper">
+        <img [src]="item.contentimage" alt="" />
+      </div>
+    </div>
+  </section>
+</div>
