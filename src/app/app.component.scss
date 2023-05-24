@@ -7,7 +7,6 @@
       align-items: center;
       flex-direction: column;
       .toolbar {
-        position: fixed;
         z-index: 100;
         background-color: rgb(88 88 88 / 50%);
         header {
@@ -22,8 +21,6 @@
             align-items: center;
             justify-content: space-between;
             width: 98%;
-            position: fixed;
-            top: 17px;
             .nav-option-wrapper {
               display: flex;
               align-items: center;
@@ -81,16 +78,9 @@
                             color: white;
                             background-color: black;
                             transform: translatex(90px);
-                            // font-size: 14px;
-                            // padding-left: 17px;
-
                           }
                         }
                       }
-                      // &:hover li{
-                      //   background: black;
-                      //   color: white;
-                      //  }
                     }
                   }
                   &:hover ul {
@@ -104,7 +94,7 @@
                 justify-content: center;
                 align-items: center;
                 flex: 1;
-                h2{
+                h2 {
                   margin: 0;
                 }
               }

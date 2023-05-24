@@ -3,7 +3,6 @@ import {
   fadeInOnEnterAnimation,
   fadeOutOnLeaveAnimation,
 } from 'angular-animations';
-
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -11,9 +10,12 @@ import {
   animations: [fadeInOnEnterAnimation(), fadeOutOnLeaveAnimation()],
 })
 export class AppComponent implements OnInit {
+  name: string = 'Angular';
+  pages: any = new Array(5);
+
   constructor() {}
-  name = 'Angular';
-  pages = new Array(5);
+  
   ngOnInit(): void {}
+  
   clickHandler() {}
 }

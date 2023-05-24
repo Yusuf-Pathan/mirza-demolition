@@ -7,7 +7,49 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
     .sec-title {
+      width: 100%;
+      // flex: 0 0 auto;
+      color: black;
+      list-style: none;
+      margin-top: 1.5rem;
+      .title {
+        font-size: 42px;
+        font-weight: 700;
+        line-height: 53px;
+        color: #010d14;
+        margin: 0;
+        padding-bottom: 20px;
+        font-family: Playfair Display;
+        opacity: 0.8;
+        transition: 0.7s;
+        &:hover {
+          opacity: 1;
+          color: #ffb703f0;
+        }
+      }
+      .sub-text {
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 1.3;
+        color: #010d14;
+        text-transform: uppercase;
+        font-family: Roboto;
+        margin: 0 0 10px;
+        display: block;
+        span {
+          img {
+            margin-right: 7px;
+            top: 2px;
+            position: relative;
+          }
+        }
+      }
       h2 {
         margin-bottom: 45px !important;
       }
