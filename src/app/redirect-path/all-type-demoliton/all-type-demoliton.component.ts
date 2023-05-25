@@ -14,9 +14,9 @@ export class AllTypeDemolitonComponent {
       page: 'pages',
       contenttitle: 'OUR SERVICES',
       firstparagraph:
-        'we are professional demolition & Dismantaling contractor we have many years of experience all over india under take demolition project of building & provide safe and trusted service from Mirza Demolition.',
+        'At our company, we offer all types of demolition services to meet your needs, from residential to commercial and industrial properties.Our team of experts has the knowledge and experience to handle all types of demolition projects, no matter the size or complexity.',
       secondparagraph:
-        'These machines look like mini-excavators, but without cabs. They run on tracks and have hydraulically powered arms to which breakers, crushers, drills, or loader buckets can be attached. Many are small enough to fit onto passenger elevators, pass through standard doorways, and even travel up and down stairs. Under their hoods, though, they have electric motors driving their hydraulic systems. And they deliver an exceptional amount of breaking power for such modest-sized equipment. Operators control the robots’ actions remotely, using conventional joystick consoles that they carry or strap to their bodies',
+        'Whether you need selective demolition, structural demolition, or complete building demolition, we have the skills and equipment to get the job done right.We take pride in offering safe, efficient, and affordable all-type demolition services to our clients, and we always strive to exceed their expectations.Whether you are looking to demolish a small shed or a massive industrial structure, we have the skills and experience to get the job done right, on time, and within your budget.',
       contentimage:
         'http://www.avanceinfratech.com/images/service-robotic-demolition.jpg',
     },

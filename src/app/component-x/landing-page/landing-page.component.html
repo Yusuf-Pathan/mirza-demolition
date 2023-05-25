@@ -2,15 +2,10 @@
   <div class="content-wrapper">
     <!-- <div class="style"> -->
       <div class="image-wrapper" *ngFor="let items of categories">
-        <carousel
-          [images]="images"
-          [cellsToShow]="1"
-          [loop]="true"
-          [autoplay]="false"
-          [autoplayInterval]="3000"
-        >
-        </carousel>
-        <div
+        <video [src]="items.landingvideo"
+        autoplay loop muted></video>
+        <div class="video-content-wrapper">
+          <div
           class="about-company"
           data-aos="fade-left"
           data-aos-anchor="#example-anchor"
@@ -37,6 +32,8 @@
             </div>
           </div>
         </div>
+        </div>
+
         <div
           class="logo-wrapper"
           data-aos="fade-left"

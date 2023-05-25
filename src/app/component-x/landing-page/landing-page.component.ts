@@ -3,7 +3,7 @@ import { Component, VERSION } from '@angular/core';
 @Component({
   selector: 'app-landing-page',
   templateUrl: './landing-page.component.html',
-  styleUrls: ['./landing-page.component.scss']
+  styleUrls: ['./landing-page.component.scss'],
 })
 export class LandingPageComponent {
   name = 'Angular ' + VERSION.major;
@@ -11,6 +11,7 @@ export class LandingPageComponent {
     {
       paragraphdesign:
         'https://devsdesign.net/products/html/konstruk/assets/images/slider/style1/shapes/icons3.png',
+      landingvideo: '../../../assets/Videos/construction-image.mp4',
       logoimgyellow:
         'https://devsdesign.net/products/html/konstruk/assets/images/slider/style1/shapes/icons2.png',
       logoimgblack:
@@ -31,5 +32,4 @@ export class LandingPageComponent {
       path: 'https://devsdesign.net/products/html/konstruk/assets/images/slider/style1/h1-1.jpg',
     },
   ];
-  
 }

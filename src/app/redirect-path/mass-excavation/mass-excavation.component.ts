@@ -14,9 +14,9 @@ export class MassExcavationComponent {
       page: 'pages',
       contenttitle: 'OUR SERVICES',
       firstparagraph:
-        'we are professional demolition & Dismantaling contractor we have many years of experience all over india under take demolition project of building & provide safe and trusted service from Mirza Demolition.',
+        'Mirza Demolition is your trusted partner for all your mass excavation needs, from site preparation to foundation work.Our team of experts has the experience and equipment needed to handle even the largest and most complex mass excavation projects, including those involving contaminated or difficult soil conditions.',
       secondparagraph:
-        'These machines look like mini-excavators, but without cabs. They run on tracks and have hydraulically powered arms to which breakers, crushers, drills, or loader buckets can be attached. Many are small enough to fit onto passenger elevators, pass through standard doorways, and even travel up and down stairs. Under their hoods, though, they have electric motors driving their hydraulic systems. And they deliver an exceptional amount of breaking power for such modest-sized equipment. Operators control the robots’ actions remotely, using conventional joystick consoles that they carry or strap to their bodies',
+        'We prioritize safety and environmental responsibility in all our mass excavation projects, and we take every precaution to protect workers, the public, and the environment. At Mirza Demolition, we offer a wide range of mass excavation services, including grading, trenching, and backfilling, as well as excavation for foundations, basements, and underground utilities.Whether you are a developer, builder, or homeowner, we can provide the mass excavation services you need to get your project off the ground, on time, and within budget.',
       contentimage:
         'http://www.avanceinfratech.com/images/service-robotic-demolition.jpg',
     },

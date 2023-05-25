@@ -11,63 +11,90 @@
     //   display: flex;
     //   overflow: hidden;
     //   width: 100%;
-      .image-wrapper {
-        width: 1663px;
-        position: relative;
-        height: auto;
-        overflow: hidden;
+    .image-wrapper {
+      width: 1663px;
+      position: relative;
+      height: auto;
+      overflow: hidden;
+      video {
+        width: 100vw;
+        position: absolute;
+        z-index: 0;
+        height: 100vh;
+        object-fit: cover;
+        filter: blur(4px);
       }
+    }
     // }
-    .about-company {
+    .video-content-wrapper {
+      width: 100vw;
+      height: 100%;
       position: absolute;
-      top: 27%;
-      left: 48%;
-      color: black;
-      width: 37%;
-      .paragraph {
-        .subtitle1 {
-          .h4-wrapper {
-            font-size: 16px;
-            font-weight: 500;
-            line-height: 28px;
-            color: #333333;
-            text-transform: uppercase;
-            display: block;
-            margin: 0 0 10px;
-            img {
-              position: relative;
-              top: 1px;
-              margin-right: 5px;
+      z-index: 10000;
+      background: white;
+      clip-path: polygon(
+        50% 0%,
+        100% 0,
+        100% 35%,
+        100% 65%,
+        100% 100%,
+        47% 100%,
+        47% 67%,
+        20% 10%,
+        0 10%,
+        0 0
+      );
+      .about-company {
+        position: absolute;
+        top: 27%;
+        left: 48%;
+        color: black;
+        width: 37%;
+        .paragraph {
+          .subtitle1 {
+            .h4-wrapper {
+              font-size: 16px;
+              font-weight: 500;
+              line-height: 28px;
+              color: #333333;
+              text-transform: uppercase;
+              display: block;
+              margin: 0 0 10px;
+              img {
+                position: relative;
+                top: 1px;
+                margin-right: 5px;
+              }
             }
           }
-        }
-        .subtitle2 {
-          font-size: 65px;
-          font-weight: 700;
-          line-height: 75px;
-          color: #010d14;
-          margin: 0 0 15px;
-        }
-        .subtitle3 {
-          margin: 0 0 30px;
-          font-size: 18px;
-          font-weight: 500;
-          line-height: 28px;
-          text-transform: capitalize;
-          color: #333333;
-        }
-        .subtitle4 {
-          .button-wrapper {
-            display: flex;
-            a {
-              background: #ffb703;
-              padding: 17px 23px 17px 23px;
-              color: #010d14;
-              font-weight: 500;
-              text-transform: uppercase;
-              &:hover {
-                background-color: black;
-                color: white;
+          .subtitle2 {
+            font-size: 65px;
+            font-weight: 700;
+            line-height: 75px;
+            color: #010d14;
+            margin: 0 0 15px;
+          }
+          .subtitle3 {
+            margin: 0 0 30px;
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 28px;
+            text-transform: capitalize;
+            color: #333333;
+          }
+          .subtitle4 {
+            .button-wrapper {
+              display: flex;
+              a {
+                background: #ffb703;
+                padding: 17px 23px 17px 23px;
+                color: #010d14;
+                font-weight: 500;
+                text-transform: uppercase;
+                &:hover {
+                  background-color: black;
+                  color: white;
+                }
               }
             }
           }
