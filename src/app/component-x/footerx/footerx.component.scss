@@ -4,6 +4,12 @@
   .footer-top {
     padding: 85px 0 70px !important;
     .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      width: 100%;
+      margin: 0 auto;
       .row {
         display: flex;
         width: 100%;
@@ -59,6 +65,16 @@
         .colume-2 {
           padding-right: 20px;
           width: 25%;
+          .footer-title {
+            position: relative;
+            font-size: 20px !important;
+            line-height: 30px !important;
+            font-weight: 500;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-family: Roboto;
+            margin-bottom: 50px !important;
+          }
           .address-widget {
             list-style: outside none none;
             margin: 0;
@@ -82,9 +98,29 @@
         .colume-3 {
           padding-right: 20px;
           width: 25%;
+          .footer-title {
+            position: relative;
+            font-size: 20px !important;
+            line-height: 30px !important;
+            font-weight: 500;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-family: Roboto;
+            margin-bottom: 50px !important;
+          }
         }
         .colume-4 {
           width: 25%;
+          .footer-title {
+            position: relative;
+            font-size: 20px !important;
+            line-height: 30px !important;
+            font-weight: 500;
+            color: #ffffff;
+            text-transform: uppercase;
+            font-family: Roboto;
+            margin-bottom: 50px !important;
+          }
           .widget-desc {
             margin: 0px 0px 27px 0;
             color: #ffffff;
@@ -132,6 +168,8 @@
         .raw1 {
           width: 50%;
           .copyright {
+            justify-content: space-around;
+            display: flex;
             P {
               font-size: 16px !important;
               display: flex !important;

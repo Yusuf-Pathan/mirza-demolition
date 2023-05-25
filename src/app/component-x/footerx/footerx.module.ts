@@ -9,6 +9,7 @@ import {MatIconModule } from '@angular/material/icon';
     CommonModule,
     MatTreeModule,
     MatIconModule
-  ]
+  ],
+   exports: [FooterxComponent]
 })
 export class FooterxModule { }

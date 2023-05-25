@@ -7,7 +7,9 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('./website-components/home/home.module').then((m) => m.HomeModule),
+      import('./landing-template/landing-template.module').then(
+        (m) => m.LandingTemplateModule
+      ),
   },
   {
     path: 'highreach',
@@ -90,10 +92,6 @@ const routes: Routes = [
     path: 'links',
     component: LinkComponent,
   },
-
-  // { path: 'landing', component: LandingComponent },
-
-  // { path: '**', redirectTo: '' },
 ];
 
 @NgModule({

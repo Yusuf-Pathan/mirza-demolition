@@ -7,7 +7,7 @@ import { EmailService } from 'src/app/website-components/home/email.service';
   styleUrls: ['./contact-us.component.scss'],
 })
 export class ContactUsComponent {
-  constructor(private conatect: EmailService) {}
+  // constructor(private conatect: EmailService) {}
   profileForm = new FormGroup({
     firstName: new FormControl(''),
     LastName: new FormControl(''),
@@ -16,17 +16,17 @@ export class ContactUsComponent {
     request: new FormControl(''),
   });
   onSubmit(profileForm: any) {
-    this.conatect.PostMessage(profileForm).subscribe(
-      (response: any) => {
-        // location.href = 'https://mailthis.to/confirm'
-        // console.log(response)
-        this.profileForm.reset();
-      },
-      (error: { responseText: any }) => {
-        console.warn(error.responseText);
-        console.log({ error });
-      }
-    );
+    // this.conatect.PostMessage(profileForm).subscribe(
+    //   (response: any) => {
+    //     // location.href = 'https://mailthis.to/confirm'
+    //     // console.log(response)
+    //     this.profileForm.reset();
+    //   },
+    //   (error: { responseText: any }) => {
+    //     console.warn(error.responseText);
+    //     console.log({ error });
+    //   }
+    // );
   }
   conatct: any = [
     {
