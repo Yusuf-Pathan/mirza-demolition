@@ -13,10 +13,9 @@ export class HighRiseBuildingComponent {
       services: 'services',
       page: 'pages',
       contenttitle: 'OUR SERVICES',
-      firstparagraph:
-        'we are professional demolition & Dismantaling contractor we have many years of experience all over india under take demolition project of building & provide safe and trusted service from Mirza Demolition.',
+      firstparagraph: 'High-rise building demolition is a complex and highly specialized service that requires advanced knowledge, experience, and equipment. At our company, we have all of these things and more.Our team of experts specializes in high-rise building demolition, and we have the skills and knowledge to handle even the most challenging projects.',
       secondparagraph:
-        'These machines look like mini-excavators, but without cabs. They run on tracks and have hydraulically powered arms to which breakers, crushers, drills, or loader buckets can be attached. Many are small enough to fit onto passenger elevators, pass through standard doorways, and even travel up and down stairs. Under their hoods, though, they have electric motors driving their hydraulic systems. And they deliver an exceptional amount of breaking power for such modest-sized equipment. Operators control the robots’ actions remotely, using conventional joystick consoles that they carry or strap to their bodies',
+        'When it comes to high-rise building demolition, safety is our top priority. We take every precaution to protect our workers, the public, and the environment.We understand that high-rise building demolition can be a daunting task, but with our expert team on your side, you can trust that the job will be done right, on time, and within your budget.Our high-rise building demolition services include everything from site preparation and permits to debris removal and recycling, so you can trust us to handle every aspect of your project with professionalism and care.',
       contentimage:
         'http://www.avanceinfratech.com/images/service-robotic-demolition.jpg',
     },

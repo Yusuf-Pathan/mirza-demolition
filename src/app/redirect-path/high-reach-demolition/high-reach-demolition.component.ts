@@ -14,9 +14,9 @@ export class HighReachDemolitionComponent {
       page: 'pages',
       contenttitle: 'OUR SERVICES',
       firstparagraph:
-        'we are professional demolition & Dismantaling contractor we have many years of experience all over india under take demolition project of building & provide safe and trusted service from Mirza Demolition.',
+        'High reach demolition is a specialized service that requires expertise and precision to ensure that the job is done safely and efficiently',
       secondparagraph:
-        'These machines look like mini-excavators, but without cabs. They run on tracks and have hydraulically powered arms to which breakers, crushers, drills, or loader buckets can be attached. Many are small enough to fit onto passenger elevators, pass through standard doorways, and even travel up and down stairs. Under their hoods, though, they have electric motors driving their hydraulic systems. And they deliver an exceptional amount of breaking power for such modest-sized equipment. Operators control the robots’ actions remotely, using conventional joystick consoles that they carry or strap to their bodies',
+        'Our team of professionals are experts in high reach demolition, and we have the equipment and experience to handle even the most challenging projects.When it comes to high reach demolition, safety is our top priority. We take every precaution to protect our workers, the public, and the environment.High reach demolition is an ideal solution for demolishing tall buildings or structures in dense urban areas where traditional demolition methods are not feasible.thats why mirza demolition is best in Gujarat ',
       contentimage:
         'http://www.avanceinfratech.com/images/service-robotic-demolition.jpg',
     },

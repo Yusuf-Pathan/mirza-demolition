@@ -14,9 +14,9 @@ export class BungalowDemolitionComponent {
       page: 'pages',
       contenttitle: 'OUR SERVICES',
       firstparagraph:
-        'we are professional demolition & Dismantaling contractor we have many years of experience all over india under take demolition project of building & provide safe and trusted service from Mirza Demolition.',
+        'Mirza Demolition is your go-to partner for safe and efficient bungalow demolition services.Our team of experts has the knowledge and experience to handle all types of bungalow demolition projects, from small residential properties to large-scale commercial developments.',
       secondparagraph:
-        'These machines look like mini-excavators, but without cabs. They run on tracks and have hydraulically powered arms to which breakers, crushers, drills, or loader buckets can be attached. Many are small enough to fit onto passenger elevators, pass through standard doorways, and even travel up and down stairs. Under their hoods, though, they have electric motors driving their hydraulic systems. And they deliver an exceptional amount of breaking power for such modest-sized equipment. Operators control the robots’ actions remotely, using conventional joystick consoles that they carry or strap to their bodies',
+        'We use state-of-the-art equipment and techniques to ensure that every bungalow demolition project is completed safely, efficiently, and within budget.At Mirza Demolition, we take pride in providing comprehensive bungalow demolition services, from site preparation and permits to debris removal and recycling.We understand that bungalow demolition can be a sensitive and emotional process, especially when it involves a family home. we have the knowledge and experience to handle all types of building demolition projects.',
       contentimage:
         'http://www.avanceinfratech.com/images/service-robotic-demolition.jpg',
     },

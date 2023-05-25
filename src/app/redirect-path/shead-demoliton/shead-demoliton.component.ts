@@ -14,9 +14,9 @@ export class SheadDemolitonComponent {
       page: 'pages',
       contenttitle: 'OUR SERVICES',
       firstparagraph:
-        'we are professional demolition & Dismantaling contractor we have many years of experience all over india under take demolition project of building & provide safe and trusted service from Mirza Demolition.',
+        'Shed demolition is an important service for removing old or unsafe structures from your property.',
       secondparagraph:
-        'These machines look like mini-excavators, but without cabs. They run on tracks and have hydraulically powered arms to which breakers, crushers, drills, or loader buckets can be attached. Many are small enough to fit onto passenger elevators, pass through standard doorways, and even travel up and down stairs. Under their hoods, though, they have electric motors driving their hydraulic systems. And they deliver an exceptional amount of breaking power for such modest-sized equipment. Operators control the robots’ actions remotely, using conventional joystick consoles that they carry or strap to their bodies',
+        'If you have an old or unsafe shed on your property, it is important that you have it removed as soon as possible. Shed demolition is the solution you need.At our company, we provide professional shed demolition services that are safe, efficient, and affordable.Our team of experts specializes in shed demolition, and we have the knowledge and experience to handle any type of demolition',
       contentimage:
         'http://www.avanceinfratech.com/images/service-robotic-demolition.jpg',
     },

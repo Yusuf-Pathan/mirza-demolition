@@ -14,9 +14,9 @@ export class AllTypeExcavatorRateComponent {
       page: 'pages',
       contenttitle: 'OUR SERVICES',
       firstparagraph:
-        'we are professional demolition & Dismantaling contractor we have many years of experience all over india under take demolition project of building & provide safe and trusted service from Mirza Demolition.',
+        'We offer competitive all type excavator rates that are designed to meet the needs of our clients while staying within their budget.Our all type excavator rates are transparent and upfront, so you always know exactly what you are paying for and why.With our all type excavator rates, you can rest assured that you are getting the best value for your money, without compromising on quality or safety ',
       secondparagraph:
-        'These machines look like mini-excavators, but without cabs. They run on tracks and have hydraulically powered arms to which breakers, crushers, drills, or loader buckets can be attached. Many are small enough to fit onto passenger elevators, pass through standard doorways, and even travel up and down stairs. Under their hoods, though, they have electric motors driving their hydraulic systems. And they deliver an exceptional amount of breaking power for such modest-sized equipment. Operators control the robots’ actions remotely, using conventional joystick consoles that they carry or strap to their bodies',
+        'Our team of experts is always available to answer any questions you may have about our all type excavator rates, and we are happy to work with you to find a solution that works best for your project and budget.At our company, we believe in providing high-quality all type excavator services at affordable rates, so you can get the job done right without breaking the bank.',
       contentimage:
         'http://www.avanceinfratech.com/images/service-robotic-demolition.jpg',
     },

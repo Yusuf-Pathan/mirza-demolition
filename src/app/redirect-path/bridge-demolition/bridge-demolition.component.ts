@@ -14,9 +14,9 @@ export class BridgeDemolitionComponent {
       page: 'pages',
       contenttitle: 'OUR SERVICES',
       firstparagraph:
-        'we are professional demolition & Dismantaling contractor we have many years of experience all over india under take demolition project of building & provide safe and trusted service from Mirza Demolition.',
+        'Bridge demolition is a complex and highly specialized service that requires advanced knowledge, experience, and equipment. At our company, we have all of these things and more.Our team of experts specializes in bridge demolition, and we have the skills and knowledge to handle even the most challenging projects.',
       secondparagraph:
-        'These machines look like mini-excavators, but without cabs. They run on tracks and have hydraulically powered arms to which breakers, crushers, drills, or loader buckets can be attached. Many are small enough to fit onto passenger elevators, pass through standard doorways, and even travel up and down stairs. Under their hoods, though, they have electric motors driving their hydraulic systems. And they deliver an exceptional amount of breaking power for such modest-sized equipment. Operators control the robots’ actions remotely, using conventional joystick consoles that they carry or strap to their bodies',
+        'When it comes to bridge demolition, safety is our top priority. We take every precaution to ensure that our customers are safe and comfortable.We take pride in providing high-quality bridge demolition services that exceed our clients expectations, and we are committed to delivering exceptional results on every project. Whether you need to demolish a small pedestrian bridge or a large highway overpass, we have the expertise and equipment to get the job done safely and efficiently.',
       contentimage:
         'http://www.avanceinfratech.com/images/service-robotic-demolition.jpg',
     },

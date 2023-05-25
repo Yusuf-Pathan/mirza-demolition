@@ -19,6 +19,13 @@ const routes: Routes = [
       ).then((m) => m.HighReachDemolitionModule),
   },
   {
+    path: 'buildings',
+    loadChildren: () =>
+      import(
+        './redirect-path/building-demolition/building-demolition.module'
+      ).then((m) => m.BuildingDemolitionModule),
+  },
+  {
     path: 'robotic',
     loadChildren: () =>
       import(
