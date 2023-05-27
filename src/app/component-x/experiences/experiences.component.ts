@@ -1,4 +1,6 @@
+import { FooterxComponent } from './../footerx/footerx.component';
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-experiences',
@@ -6,13 +8,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./experiences.component.scss'],
 })
 export class ExperiencesComponent {
+  constructor(public router: Router) {}
+  reloadPage() {
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.router.navigate(['/src/app/component-x/FooterxComponent']);
+    });
+  }
   countdown: any = [
     {
       subimg:
         'https://devsdesign.net/products/html/konstruk/assets/images/shape-1.png',
       subtext: ' NUMBER TALKS',
-      title: ' Konstruk will help you get things complete reality.',
-      paragraph: 'Konstruk will help you get things complete reality.',
+      title: 'Our team of experts will help you get things complete reality.',
+      paragraph: 'mirza demolitions will help you get things complete reality.',
       btn: 'CONTACT NOW',
     },
   ];

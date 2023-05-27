@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { LandingTemplateComponent } from './landing-template.component';
 import { CommonModule } from '@angular/common';
-import { IvyCarouselModule } from 'angular-responsive-carousel';
+// import { IvyCarouselModule } from 'angular-responsive-carousel';
 import { MatIconModule } from '@angular/material/icon';
 import { MatExpansionModule } from '@angular/material/expansion';
 import { MatCardModule } from '@angular/material/card';
@@ -29,7 +29,7 @@ import { LandingTemplateRoutingModule } from './landing-template-routing.module'
   imports: [
     CommonModule,
     LandingTemplateRoutingModule,
-    IvyCarouselModule,
+    // IvyCarouselModule,
     MatIconModule,
     MatExpansionModule,
     MatCardModule,

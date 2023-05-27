@@ -11,7 +11,7 @@ export class BenifitsComponent {
       subimg:
         'https://devsdesign.net/products/html/konstruk/assets/images/shape-1.png',
       subtext: 'WHY CHOOSE US',
-      title: 'Why you should choose our konstruk platform.',
+      title: 'Why you should choose our mirza demolitions platform.',
       img: 'https://devsdesign.net/products/html/konstruk/assets/images/choose/benefit/tabs-images.png',
       paragraph:
         'Nor is there anyone who loves or pursues or desires to obtain pain of the itself, because it is pain, but occasionally cumstances.',

@@ -22,7 +22,7 @@
             </div>
             <p>{{ value.paragraph }}</p>
             <div class="btn">
-              <a href="#">{{ value.btn }}</a>
+              <a (click)="reloadPage()">{{ value.btn }}</a>
             </div>
           </div>
         </div>
@@ -74,3 +74,5 @@
     </div>
   </div>
 </section>
+
+ <router-outlet></router-outlet>

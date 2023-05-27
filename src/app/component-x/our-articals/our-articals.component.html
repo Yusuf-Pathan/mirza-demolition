@@ -19,42 +19,77 @@
       <div class="carousel-wrapper">
         <owl-carousel-o [options]="customOptionse">
           <ng-container>
-            <ng-template class="slide" carouselSlide>
-              <div class="card-outler">
-                <div class="card" *ngFor="let card of cards">
-                  <div class="blog-item">
-                    <div class="image-wrap">
+            <ng-template *ngFor="let card of cards" class="slide" carouselSlide>
+              <div class="card">
+                <div class="blog-item">
+                  <div class="image-wrap">
+                    <a href="#">
+                      <img [src]="card.cardimg" alt="" />
+                    </a>
+                  </div>
+                  <div class="blog-content">
+                    <ul class="blog-meta">
+                      <li class="date">
+                        <mat-icon>today</mat-icon>
+                        {{ card.date }}
+                      </li>
+                      <li class="admin">
+                        <mat-icon>person_outline</mat-icon>
+                        {{ card.tagname }}
+                      </li>
+                    </ul>
+                    <h3 class="blog-title">
                       <a href="#">
-                        <img [src]="card.cardimg" alt="" />
+                        {{ card.cardparagraph }}
                       </a>
-                    </div>
-                    <div class="blog-content">
-                      <ul class="blog-meta">
-                        <li class="date">
-                          <mat-icon>today</mat-icon>
-                          {{ card.date }}
-                        </li>
-                        <li class="admin">
-                          <mat-icon>person_outline</mat-icon>
-                          {{ card.tagname }}
-                        </li>
-                      </ul>
-                      <h3 class="blog-title">
-                        <a href="#">
-                          {{ card.cardparagraph }}
-                        </a>
-                      </h3>
-                      <div class="blog-button">
-                        <a href="#"> {{ card.cardbutton }}</a>
-                      </div>
+                    </h3>
+                    <div class="blog-button">
+                      <a href="#"> {{ card.cardbutton }}</a>
                     </div>
                   </div>
                 </div>
               </div>
-            </ng-template>
+          </ng-template>
           </ng-container>
         </owl-carousel-o>
       </div>
     </div>
   </div>
 </section>
+<!-- <owl-carousel-o [options]="customOptionse">
+  <ng-container>
+    <ng-template class="slide" carouselSlide>
+
+        <div class="card" *ngFor="let card of cards">
+          <div class="blog-item">
+            <div class="image-wrap">
+              <a href="#">
+                <img [src]="card.cardimg" alt="" />
+              </a>
+            </div>
+            <div class="blog-content">
+              <ul class="blog-meta">
+                <li class="date">
+                  <mat-icon>today</mat-icon>
+                  {{ card.date }}
+                </li>
+                <li class="admin">
+                  <mat-icon>person_outline</mat-icon>
+                  {{ card.tagname }}
+                </li>
+              </ul>
+              <h3 class="blog-title">
+                <a href="#">
+                  {{ card.cardparagraph }}
+                </a>
+              </h3>
+              <div class="blog-button">
+                <a href="#"> {{ card.cardbutton }}</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+    </ng-template>
+  </ng-container>
+</owl-carousel-o> -->

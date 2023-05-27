@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { bounce, fadeOutTopLeft } from 'ng-animate';
+// import { bounce, fadeOutTopLeft } from 'ng-animate';
 import * as AOS from 'aos';
 @Component({
   selector: 'app-reviews',
@@ -52,7 +52,6 @@ export class ReviewsComponent {
       review1: 'Our clients reviews.',
       review2: 'Expert team members.',
     },
-
     //  {
     //   item:'https://devsdesign.net/products/html/konstruk/assets/images/testimonial/style1/quote.png',
     //   paragraph:'Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway.',

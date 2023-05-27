@@ -44,5 +44,6 @@ export class OurArticalsComponent {
       cardparagraph: 'Best practices construction law on construction',
       cardbutton: 'read more',
     },
+
   ];
 }

@@ -2,6 +2,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 // import { LandingComponent } from './components/landing/landing.component';
 import { LinkComponent } from './redirect-path/link.component';
+import { FooterxComponent } from './component-x/footerx/footerx.component';
 
 const routes: Routes = [
   {
@@ -82,6 +83,13 @@ const routes: Routes = [
       ),
   },
   {
+    path: 'contacts',
+    loadChildren: () =>
+      import('./component-x/footerx/footerx.module').then(
+        (m) => m.FooterxModule
+      ),
+  },
+  {
     path: 'bungalow',
     loadChildren: () =>
       import(
@@ -95,10 +103,12 @@ const routes: Routes = [
         (m) => m.MassExcavationModule
       ),
   },
+
   {
     path: 'links',
     component: LinkComponent,
   },
+
 ];
 
 @NgModule({

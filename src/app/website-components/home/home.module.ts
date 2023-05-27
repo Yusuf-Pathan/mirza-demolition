@@ -2,7 +2,7 @@ import {NgModule } from '@angular/core';
 import {CommonModule } from '@angular/common';
 import {HomeRoutingModule } from './home-routing.module';
 import {HomeComponent } from './home.component';
-import {IvyCarouselModule } from "angular-responsive-carousel";
+// import {IvyCarouselModule } from "angular-responsive-carousel";
 import {MatIconModule } from '@angular/material/icon';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {MatCardModule} from '@angular/material/card';
@@ -55,7 +55,7 @@ import { EmailService } from './email.service';
     imports: [
         CommonModule,
         HomeRoutingModule,
-        IvyCarouselModule,
+        // IvyCarouselModule,
         MatIconModule,
         MatExpansionModule,
         MatCardModule,
