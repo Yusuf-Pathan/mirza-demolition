@@ -6,6 +6,7 @@ body {
   height: 100%;
   // background-color: #000000;
 }
+
 body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
@@ -16,11 +17,13 @@ body {
     cursor: pointer;
   }
 }
+
 .owl-carousel {
   .ng-tns-c1-3 {
     margin: 40px 10px !important;
   }
 }
+
 .owl-item {
   width: 390.5px;
   .circle-img {
@@ -33,6 +36,7 @@ body {
     }
   }
 }
+
 carousel {
   height: 100vh !important ;
   z-index: auto !important;
@@ -55,6 +59,7 @@ carousel {
     }
   }
 }
+
 .accordion {
   .card {
     mat-expansion-panel-header {
@@ -85,6 +90,7 @@ carousel {
     }
   }
 }
+
 .rs-partners {
   .containers {
     display: block !important;
@@ -135,6 +141,7 @@ carousel {
     }
   }
 }
+
 .rs-blog {
   .carousel-wrapper {
     width: 100% !important;
@@ -151,15 +158,6 @@ carousel {
         }
       }
     }
-    // owl-stage {
-    //   .owl-stage {
-    //     transform: none !important;
-    //     .owl-item {
-    //       user-select: none;
-    //       width: 372px !important;
-    //     }
-    //   }
-    // }
   }
 }
 
@@ -173,6 +171,7 @@ carousel {
     }
   }
 }
+
 .spinner {
   position: fixed;
   animation: linear infinite;
@@ -182,6 +181,7 @@ carousel {
   transform: translate(-50% -50%);
   z-index: 0;
 }
+
 .spinners {
   position: absolute;
   animation: linear infinite;
@@ -191,6 +191,7 @@ carousel {
   top: 50%;
   z-index: 0;
 }
+
 @keyframes run {
   0% {
     transform: translate(0%);
@@ -199,18 +200,10 @@ carousel {
     transform: translate(100%);
   }
 }
+
 .img-wrapper-carousel {
   width: 13%;
   img {
     width: 100%;
   }
-}
-
-html,
-body {
-  height: 100%;
-}
-body {
-  margin: 0;
-  font-family: Roboto, "Helvetica Neue", sans-serif;
 }

@@ -6,6 +6,6 @@ import { WorkCategoriesComponent } from './work-categories.component';
 @NgModule({
   declarations: [WorkCategoriesComponent],
   imports: [CommonModule, WorkCategoriesRoutingModule],
-  exports: [WorkCategoriesComponent]
+  exports: [WorkCategoriesComponent],
 })
 export class WorkCategoriesModule {}

@@ -1,4 +1,3 @@
-import { FooterxComponent } from './../footerx/footerx.component';
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
@@ -8,12 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./experiences.component.scss'],
 })
 export class ExperiencesComponent {
-  constructor(public router: Router) {}
-  reloadPage() {
-    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
-      this.router.navigate(['/src/app/component-x/FooterxComponent']);
-    });
-  }
   countdown: any = [
     {
       subimg:
@@ -24,42 +17,46 @@ export class ExperiencesComponent {
       btn: 'CONTACT NOW',
     },
   ];
-  ProjectCount1: number = 0;
-  ProjectCount2: number = 0;
-  ProjectCount3: number = 0;
-  ProjectCount4: number = 0;
-  ProjectCountstop: any = setInterval(() => {
-    this.ProjectCount1++;
+  completedProjects: number = 0;
+  yearsOfExperience: number = 0;
+  currentProjects: number = 0;
+  options: number = 0;
 
-    if (this.ProjectCount1 == 312) {
-      clearInterval(this.ProjectCountstop);
-    }
-  }, 10);
+  constructor(public router: Router) {}
 
-  ProjectCountstop2: any = setInterval(() => {
-    this.ProjectCount2++;
-    if (this.ProjectCount2 == 302) {
-      clearInterval(this.ProjectCountstop2);
-    }
-  }, 10);
+  reloadPage() {
+    this.router.navigateByUrl('/', { skipLocationChange: true }).then(() => {
+      this.router.navigate(['/src/app/component-x/FooterxComponent']);
+    });
+  }
 
-  ProjectCountstop3: any = setInterval(() => {
-    this.ProjectCount3++;
-    if (this.ProjectCount3 == 153) {
-      clearInterval(this.ProjectCountstop3);
-    }
-  }, 10);
-
-  ProjectCountstop4: any = setInterval(() => {
-    this.ProjectCount4++;
-    if (this.ProjectCount4 == 32) {
-      clearInterval(this.ProjectCountstop4);
-    }
-  }, 100);
   ngOnInit(): void {
-    this.ProjectCount1;
-    this.ProjectCount2;
-    this.ProjectCount3;
-    this.ProjectCount4;
+    const completedProjects = setInterval(() => {
+      this.completedProjects++;
+      if (this.completedProjects === 312) {
+        clearInterval(completedProjects);
+      }
+    }, 50);
+
+    const yearsOfExperience = setInterval(() => {
+      this.yearsOfExperience++;
+      if (this.yearsOfExperience == 302) {
+        clearInterval(yearsOfExperience);
+      }
+    }, 50);
+
+    const currentProjects = setInterval(() => {
+      this.currentProjects++;
+      if (this.currentProjects == 153) {
+        clearInterval(currentProjects);
+      }
+    }, 50);
+
+    const options = setInterval(() => {
+      this.options++;
+      if (this.options == 32) {
+        clearInterval(options);
+      }
+    }, 50);
   }
 }

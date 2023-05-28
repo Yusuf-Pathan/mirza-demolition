@@ -1,6 +1,6 @@
 <section
+  data-aos-anchor="#experience-anchor"
   data-aos="fade-left"
-  data-aos-anchor="#example-anchor"
   data-aos-offset="500"
   data-aos-duration="500"
 >
@@ -14,7 +14,9 @@
         <div class="info" data-aos="zoom-out-left">
           <div class="sec-title">
             <div class="sub-text">
-              <span><img [src]="value.subimg" alt="" /></span>
+              <span>
+                <img [src]="value.subimg" alt="" />
+              </span>
               {{ value.subtext }}
             </div>
             <div class="title">
@@ -32,7 +34,7 @@
               <div class="counter-list">
                 <div class="counter-text">
                   <div class="count-number">
-                    <span class="rs-count">{{ ProjectCount1 + "+" }}</span>
+                    <span class="rs-count">{{ completedProjects + "+" }}</span>
                   </div>
                   <span class="title">Completed Projects</span>
                 </div>
@@ -42,7 +44,7 @@
               <div class="counter-list">
                 <div class="counter-text">
                   <div class="count-number">
-                    <span class="rs-count">{{ ProjectCount2 + "+" }}</span>
+                    <span class="rs-count">{{ yearsOfExperience + "+" }}</span>
                   </div>
                   <span class="title">Completed Projects</span>
                 </div>
@@ -52,7 +54,7 @@
               <div class="counter-list">
                 <div class="counter-text">
                   <div class="count-number">
-                    <span class="rs-count">{{ ProjectCount3 + "+" }}</span>
+                    <span class="rs-count">{{ currentProjects + "+" }}</span>
                   </div>
                   <span class="title">Completed Projects</span>
                 </div>
@@ -62,7 +64,7 @@
               <div class="counter-list">
                 <div class="counter-text">
                   <div class="count-number">
-                    <span class="rs-count">{{ ProjectCount4 + "+" }}</span>
+                    <span class="rs-count">{{ options + "+" }}</span>
                   </div>
                   <span class="title">Completed Projects</span>
                 </div>
@@ -75,4 +77,4 @@
   </div>
 </section>
 
- <router-outlet></router-outlet>
+<router-outlet></router-outlet>

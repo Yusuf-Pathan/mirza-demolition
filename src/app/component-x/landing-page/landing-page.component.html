@@ -1,9 +1,7 @@
 <div class="home-wrapper">
   <div class="content-wrapper">
-    <!-- <div class="style"> -->
     <div class="image-wrapper" *ngFor="let items of categories">
-      <video [src]="items.landingvideo" autoplay loop muted></video>
-      <div class="background-video-img"></div>
+      <video [src]="items.landingVideo" autoplay loop muted></video>
       <div class="video-content-wrapper">
         <div
           class="about-company"
@@ -15,7 +13,7 @@
           <div class="paragraph">
             <div class="subtitle1">
               <div class="h4-wrapper">
-                <img [src]="items.paragraphdesign" alt="" /> {{ items.title }}
+                <img [src]="items.paragraphDesign" alt="" /> {{ items.title }}
               </div>
             </div>
             <div class="subtitle2">
@@ -27,7 +25,7 @@
             </div>
             <div class="subtitle4">
               <div class="button-wrapper">
-                <a href="#">DISCOVER MORE</a>
+                <a>DISCOVER MORE</a>
               </div>
             </div>
           </div>
@@ -40,10 +38,9 @@
         data-aos-offset="500"
         data-aos-duration="500"
       >
-        <img [src]="items.logoimgyellow" alt="" />
-        <img [src]="items.logoimgblack" alt="" />
+        <img [src]="items.downArrowLogo" alt="" />
+        <img [src]="items.upArrowLogo" alt="" />
       </div>
     </div>
-    <!-- </div> -->
   </div>
 </div>

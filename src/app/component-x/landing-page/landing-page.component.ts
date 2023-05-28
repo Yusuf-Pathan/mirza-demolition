@@ -1,3 +1,5 @@
+
+
 import { Component, VERSION } from '@angular/core';
 
 @Component({
@@ -9,14 +11,14 @@ export class LandingPageComponent {
   name = 'Angular ' + VERSION.major;
   categories: any = [
     {
-      paragraphdesign:
+      paragraphDesign:
         'https://devsdesign.net/products/html/konstruk/assets/images/slider/style1/shapes/icons3.png',
-      landingvideo: '../../../assets/Videos/construction-image.mp4',
-      logoimgyellow:
+      landingVideo: '../../../assets/Videos/construction-image.mp4',
+      downArrowLogo:
         'https://devsdesign.net/products/html/konstruk/assets/images/slider/style1/shapes/icons2.png',
-      logoimgblack:
+      upArrowLogo:
         'https://devsdesign.net/products/html/konstruk/assets/images/slider/style1/shapes/icons1.png',
-      title: 'CONSTRUCTION BUSINESS',
+      title: 'Demolition BUSINESS',
       id: 1,
       subTitle1: 'Our Service Is Best ',
       subTitle2: 'In All Over India',
