@@ -1,4 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -6,13 +6,4 @@ import { Component, Input, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss'],
 
 })
-export class AppComponent implements OnInit {
-  name: string = 'Angular';
-  pages: any = new Array(5);
-
-  constructor() {}
-
-  ngOnInit(): void {}
-
-  clickHandler() {}
-}
+export class AppComponent {}

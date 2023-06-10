@@ -8,42 +8,42 @@ import { Component } from '@angular/core';
 export class WorkCategoriesComponent {
   demolitionCategories: any = [
     {
-      demolitionOption: 'General Construction',
+      demolitionOption: 'Demolition Construction',
       cardImage: '../../../assets/images/image-3.jpg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn: 'Read More',
       logoImage: 'https://img.freepik.com/free-icon/demolition_318-405862.jpg?t=st=1682597462~exp=1682598062~hmac=cf583bbcf3b62192fa0d236497b7ee74af57bfd0b60fd3d2871be7eca30db2e7',
     },
     {
-      demolitionOption: 'Property Maintenanse',
+      demolitionOption: 'High Rise Demolition',
       cardImage: '../../../assets/images/image-4.jpg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn: 'Read More',
       logoImage: 'https://img.freepik.com/free-icon/head_318-371228.jpg?t=st=1682594625~exp=1682595225~hmac=0d10bc2d48e7084e0b1a2a99633e322c2c06748aaeec6062257ce9e580022fdc',
     },
     {
-      demolitionOption: 'Project Manajment',
+      demolitionOption: 'Project Management',
       cardImage: '../../../assets/images/image-4.jpg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn: 'Read More',
       logoImage: 'https://img.freepik.com/free-icon/cogwheel_318-503450.jpg?t=st=1682594421~exp=1682595021~hmac=55f2db6e4c29f7fe7687b4390eea80200c451017161b76136054e2220cf72364',
     },
     {
-      demolitionOption: 'Virtual Design & Build',
+      demolitionOption: 'Earth Moving Service',
       cardImage: '../../../assets/images/image-4.jpg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn: 'Read More',
       logoImage: 'https://img.freepik.com/free-icon/file_318-443752.jpg?t=st=1682594806~exp=1682595406~hmac=dce59a6fbd592f86bf25b86e10a24011149a82eb92a7906f66d6d88be2410dd5',
     },
     {
-      demolitionOption: 'Preconstruction',
+      demolitionOption: 'Removing Debris',
       cardImage: '../../../assets/images/image-4.jpg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn: 'Read More',
       logoImage: 'https://img.freepik.com/free-icon/payment-method_318-529437.jpg?t=st=1682596724~exp=1682597324~hmac=dc2fcba4cfe116d76fe75f17519a5131ed9779f023cbcf459453461e4e5d4e20',
     },
     {
-      demolitionOption: 'Design & Build',
+      demolitionOption: 'All types of Demolition',
       cardImage: '../../../assets/images/image-4.jpg',
       description: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam, debitis.',
       btn: 'Read More',

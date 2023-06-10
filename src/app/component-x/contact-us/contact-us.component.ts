@@ -10,9 +10,9 @@ export class ContactUsComponent {
   items: any[] = [];
   profileForm = new FormGroup({
     firstName: new FormControl(''),
-    lastName: new FormControl(''),
-    emails: new FormControl(''),
-    company: new FormControl(''),
+    LastName: new FormControl(''),
+    Emails: new FormControl(''),
+    Company: new FormControl(''),
     request: new FormControl(''),
   });
   contact = [
