@@ -1,79 +1,78 @@
-<section
+<div
+  class="counter-wrapper"
   data-aos-anchor="#experience-anchor"
   data-aos="fade-left"
   data-aos-offset="500"
   data-aos-duration="500"
 >
-  <div class="counter-wrapper">
-    <div
-      class="row y-middle"
-      *ngFor="let value of countdown"
-      data-aos="zoom-out-left"
-    >
-      <div class="info" data-aos="zoom-out-left">
-        <div class="sec-title">
-          <div class="sub-text">
-            <span>
-              <img [src]="value.subimg" alt="" />
-            </span>
-            {{ value.subtext }}
-          </div>
-          <div class="title">
-            {{ value.title }}
-          </div>
-          <p>{{ value.paragraph }}</p>
-          <div class="btn">
-            <a (click)="reloadPage()">{{ value.btn }}</a>
-          </div>
+  <div
+    class="row y-middle"
+    *ngFor="let value of countdown"
+    data-aos="zoom-out-left"
+  >
+    <div class="info" data-aos="zoom-out-left">
+      <div class="sec-title">
+        <div class="sub-text">
+          <span>
+            <img [src]="value.subimg" alt="" />
+          </span>
+          {{ value.subtext }}
         </div>
-      </div>
-      <div class="data-count" data-aos="zoom-out-right">
-        <div class="rows">
-          <div class="wrapper-countdown">
-            <div class="counter-list">
-              <div class="counter-text">
-                <div class="count-number">
-                  <span class="rs-count">{{ completedProjects + "+" }}</span>
-                </div>
-                <span class="title">Trusted Reviews</span>
-              </div>
-            </div>
-          </div>
-          <div class="wrapper-countdown">
-            <div class="counter-list">
-              <div class="counter-text">
-                <div class="count-number">
-                  <span class="rs-count">{{ yearsOfExperience + "+" }}</span>
-                </div>
-                <span class="title">Year's of Experience</span>
-              </div>
-            </div>
-          </div>
-
-          <!-- <div class="wrapper-countdown">
-            <div class="counter-list">
-              <div class="counter-text">
-                <div class="count-number">
-                  <span class="rs-count">{{ currentProjects + "+" }}</span>
-                </div>
-                <span class="title">Year's of Experience</span>
-              </div>
-            </div>
-          </div>
-          <div class="wrapper-countdown">
-            <div class="counter-list">
-              <div class="counter-text">
-                <div class="count-number">
-                  <span class="rs-count">{{ options + "+" }}</span>
-                </div>
-                <span class="title">Year's of Experience</span>
-              </div>
-            </div>
-          </div> -->
+        <div class="title">
+          {{ value.title }}
+        </div>
+        <p>{{ value.paragraph }}</p>
+        <div class="btn">
+          <a (click)="reloadPage()">{{ value.btn }}</a>
         </div>
       </div>
     </div>
+    <div class="data-count" data-aos="zoom-out-right">
+      <div class="rows">
+        <div class="wrapper-countdown">
+          <div class="counter-list">
+            <div class="counter-text">
+              <div class="count-number">
+                <span class="rs-count">{{ completedProjects + "+" }}</span>
+              </div>
+              <span class="title">Trusted Reviews</span>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-countdown">
+          <div class="counter-list">
+            <div class="counter-text">
+              <div class="count-number">
+                <span class="rs-count">{{ yearsOfExperience + "+" }}</span>
+              </div>
+              <span class="title">Year's of Experience</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- <div class="wrapper-countdown">
+          <div class="counter-list">
+            <div class="counter-text">
+              <div class="count-number">
+                <span class="rs-count">{{ currentProjects + "+" }}</span>
+              </div>
+              <span class="title">Year's of Experience</span>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper-countdown">
+          <div class="counter-list">
+            <div class="counter-text">
+              <div class="count-number">
+                <span class="rs-count">{{ options + "+" }}</span>
+              </div>
+              <span class="title">Year's of Experience</span>
+            </div>
+          </div>
+        </div> -->
+      </div>
+    </div>
   </div>
-</section>
+</div>
 
 <router-outlet></router-outlet>

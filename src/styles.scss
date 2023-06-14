@@ -1,10 +1,10 @@
 @import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
 @import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 @import "~font-awesome/css/font-awesome.css";
+
 html,
 body {
   height: 100%;
-  // background-color: #000000;
 }
 
 body {
@@ -152,7 +152,7 @@ carousel {
     .owl-item {
       width: 390px !important;
       .card-outler {
-         width: 100% !important;
+        width: 100% !important;
         .card {
           width: 100%;
         }

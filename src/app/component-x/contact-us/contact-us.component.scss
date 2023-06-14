@@ -1,11 +1,8 @@
 .contact-wrapper {
   background-color: white !important;
   color: black !important;
-  // display: flex;
-  // justify-content: center;
   padding: 50px 0px;
   section {
-    // width: 100%;
     display: flex;
     justify-content: center;
     position: relative;
@@ -107,7 +104,6 @@
           }
         }
         .emails {
-          // margin-bottom: 15px;
           input {
             padding: 6px 0;
             font-family: Catamaran, sans-serif;

@@ -10,6 +10,8 @@ export class LandingPageComponent {
     {
       paragraphDesign:
         'https://devsdesign.net/products/html/konstruk/assets/images/slider/style1/shapes/icons3.png',
+      paragraphDesignx:
+        '../../../assets/images/dote-image.png',
       landingVideo: '../../../assets/Videos/construction-image.mp4',
       downArrowLogo:
         'https://devsdesign.net/products/html/konstruk/assets/images/slider/style1/shapes/icons2.png',
@@ -23,4 +25,8 @@ export class LandingPageComponent {
       id: 1,
     },
   ];
+
+  handleClickedEvent(): void {
+    debugger;
+  }
 }

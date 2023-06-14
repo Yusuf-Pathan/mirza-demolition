@@ -16,18 +16,19 @@
       data-aos-offset="500"
       data-aos-duration="500"
     >
-      <div class="section" *ngFor="let category of categories">
+      <div class="content-wrapper">
         <div class="sub-text">
-          <img [src]="category.squareDotes" alt="Images" />
-          {{ category.whoWeAre }}
+          <img src="../../../assets/images/dote-image.png" alt="Images" />
+          Who We Are
         </div>
-        <h2 class="title">{{ category.title }}</h2>
+        <h2 class="title">Demolition Solutions Provider</h2>
         <p>
-          {{ category.description }}
+          All types of RCC Demolition & dismantling Company. We provide the best
+          service and the best safety over in our demolition work.
         </p>
         <div class="middle-raw">
           <div class="mini-img">
-            <img [src]="category.image" />
+            <img src="https://www.laborfinders.com/media/ufjptgn2/testfile.jpg?width=738&height=440&rnd=133152766609970000&format=webp&quality=80" />
           </div>
           <div class="ul-wrapper">
             <div class="cheak-list">
@@ -35,33 +36,27 @@
                 <span class="icon-list-icon">
                   <mat-icon>check_circle</mat-icon>
                 </span>
-                <span class="list-text">{{category.listOptionOne}}</span>
+                <span class="list-text">High Rise Demolition Service</span>
               </li>
               <li class="list-item">
                 <span class="icon-list-icon">
                   <mat-icon>check_circle</mat-icon>
                 </span>
-                <span class="list-text">{{category.listOptionTwo}}</span>
+                <span class="list-text">Earth Moving Demolition Service</span>
               </li>
               <li class="list-item">
                 <span class="icon-list-icon">
                   <mat-icon>check_circle</mat-icon>
                 </span>
-                <span class="list-text">{{category.listOptionThree}}</span>
+                <span class="list-text">Fabrication Work Service</span>
               </li>
             </div>
           </div>
         </div>
         <div class="footer-wrapper">
           <div class="button-wrapper">
-            <a>KNOW MORE</a>
+            <app-md-button text="KNOW MORE" (buttonEmitter)="handleClickedEvent()"></app-md-button>
           </div>
-          <!-- <div class="sign-wrapper">
-            <img
-              src="https://devsdesign.net/products/html/konstruk/assets/images/about/style1/signeture1.png"
-              alt=""
-            />
-          </div> -->
         </div>
       </div>
     </div>

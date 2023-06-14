@@ -1,17 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { LandingPageRoutingModule } from './landing-page-routing.module';
-import { CarouselModule } from 'ngx-owl-carousel-o';
-// import { IvyCarouselModule } from "angular-responsive-carousel";
 import { LandingPageComponent } from './landing-page.component';
+import { MdButtonModule } from 'src/app/common-components/md-button/md-button.module';
 
 @NgModule({
   declarations: [LandingPageComponent],
   imports: [
     CommonModule,
     LandingPageRoutingModule,
-    CarouselModule,
-    // IvyCarouselModule,
+    MdButtonModule
   ],
   exports: [LandingPageComponent],
 })

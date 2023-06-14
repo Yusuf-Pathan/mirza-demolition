@@ -1,36 +1,44 @@
-<div class="home-wrapper">
-  <div class="content-wrapper">
-    <div class="image-wrapper" *ngFor="let items of categories">
-      <video autoplay muted playsinline loop oncanplay="this.play()" onloadedmetadata="this.muted = true">
-        <source [src]="items.landingVideo" type="video/mp4" />
-      </video>
-      <div class="video-content-wrapper">
-        <div
-          class="about-company"
-          data-aos="fade-left"
-          data-aos-anchor="#example-anchor"
-          data-aos-offset="500"
-          data-aos-duration="500"
-        >
-          <div class="paragraph">
-            <div class="subtitle1">
-              <div class="h4-wrapper">
-                <img [src]="items.paragraphDesign" alt="" /> {{ items.title }}
-              </div>
-            </div>
-            <div class="subtitle2">
-              {{ items.subTitle1 }}
-              {{ items.subTitle2 }}
-            </div>
-            <div class="subtitle3">
-              {{ items.paragraph }}
-            </div>
-            <div class="subtitle4">
-              <div class="button-wrapper">
-                <a>DISCOVER MORE</a>
-              </div>
-            </div>
-          </div>
+<div class="landing-wrapper">
+  <video
+    autoplay
+    muted
+    playsinline
+    loop
+    oncanplay="this.play()"
+    onloadedmetadata="this.muted = true"
+  >
+    <source
+      src="../../../assets/Videos/construction-image.mp4"
+      type="video/mp4"
+    />
+  </video>
+  <div class="video-content-wrapper">
+    <div
+      class="about-company"
+      data-aos="fade-left"
+      data-aos-anchor="#example-anchor"
+      data-aos-offset="500"
+      data-aos-duration="500"
+    >
+      <div class="detail-wrapper">
+        <div class="company-log-name-wrapper">
+          <img src="../../../assets/images/dote-image.png" alt="" />
+          <span> Mirza Demolition </span>
+        </div>
+
+        <div class="short-title-wrapper">
+          Our Service Is Best In <br />
+          All Over India
+        </div>
+        <div class="short-sub-title-wrapper">
+          We provide A valuable & affordable & reliable service from our India
+          head since 30+ years
+        </div>
+        <div class="button-wrapper">
+          <app-md-button
+            text="DISCOVER MORE"
+            (buttonEmitter)="handleClickedEvent()"
+          ></app-md-button>
         </div>
       </div>
     </div>
