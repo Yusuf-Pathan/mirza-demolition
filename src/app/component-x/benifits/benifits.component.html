@@ -1,11 +1,11 @@
 <div class="rs-choose">
-  <div class="row" *ngFor="let skill of choose">
+  <div class="row">
     <div class="video-wrapper" data-aos="zoom-out-right">
       <div class="rs-video">
         <div class="animate-border">
-          <a href="https://youtu.be/dNQQoRyT4xE" class="popup-border">
+          <button class="popup-border">
             <mat-icon>play_arrow</mat-icon>
-          </a>
+          </button>
         </div>
       </div>
     </div>
@@ -20,15 +20,33 @@
         >
           <span class="sub-text">
             <span>
-              <img [src]="skill.subimg" alt="" /> {{ skill.subtext }}
+              <img
+                src="https://devsdesign.net/products/html/konstruk/assets/images/shape-1.png"
+                alt=""
+              />
+              WHY CHOOSE US
             </span>
           </span>
           <h2 class="title">
-            {{ skill.title }}
+            Why you should choose our mirza demolitions platform.
           </h2>
           <p class="desc">
-            {{ skill.paragraph }}
+            When it comes to demolition services, our Mirza Demolitions platform
+            stands out as the optimal choice for several compelling reasons.
+            <br />
+            <br />
+            First and foremost, we possess a wealth of experience and expertise
+            in the demolition industry. Our skilled professionals have
+            successfully completed numerous projects, earning a solid reputation
+            for delivering high-quality results.
+            <br />
+            <br />
+            We prioritize safety above all else, implementing stringent safety
+            protocols and employing highly trained personnel. With us, you can
+            have peace of mind knowing that every demolition project is executed
+            with utmost care and adherence to industry regulations.
           </p>
+
           <div class="row-wrapper">
             <div class="row" *ngFor="let item of service">
               <div class="mini-card1">
@@ -47,18 +65,15 @@
               </div>
             </div>
           </div>
+
           <div class="working-skill-part">
             <div class="rows">
               <div class="title-wrapper">
                 <div class="title-inner">
-                  <h4 class="title">
-                    {{ skill.working }}
-                  </h4>
+                  <h4 class="title">Working skill</h4>
                 </div>
                 <div class="title-inner">
-                  <h4 class="title">
-                    {{ skill.clintrating }}
-                  </h4>
+                  <h4 class="title">Client rating</h4>
                 </div>
               </div>
               <div class="ratting-wrapper">
@@ -66,9 +81,7 @@
                   <div class="skill">
                     <div class="skillbar">
                       <p class="skillbar-bar"></p>
-                      <span class="skill-bar-percent">
-                        {{ skill.workpercentage }}
-                      </span>
+                      <span class="skill-bar-percent"> 95% </span>
                     </div>
                   </div>
                 </div>
@@ -82,11 +95,8 @@
               </div>
             </div>
             <p class="view-result">
-              {{ skill.footstrap }}
-              -
-              <a class="viewlink" href="#"
-                ><span>{{ skill.span }}</span></a
-              >
+              5.00 Average Based On 50 Rating -
+              <a class="viewlink"><span>More information</span></a>
             </p>
           </div>
         </div>

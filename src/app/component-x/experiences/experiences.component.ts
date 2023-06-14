@@ -12,8 +12,8 @@ export class ExperiencesComponent {
       subimg:
         'https://devsdesign.net/products/html/konstruk/assets/images/shape-1.png',
       subtext: ' NUMBER TALKS',
-      title: 'Our team of experts will help you get things complete reality.',
-      paragraph: 'mirza demolitions will help you get things complete reality.',
+      title: 'Our team of experts will help you get things complete.',
+      paragraph: 'mirza demolitions will help you get things complete.',
       btn: 'CONTACT NOW',
     },
   ];
@@ -40,7 +40,7 @@ export class ExperiencesComponent {
 
     const yearsOfExperience = setInterval(() => {
       this.yearsOfExperience++;
-      if (this.yearsOfExperience == 302) {
+      if (this.yearsOfExperience == 30) {
         clearInterval(yearsOfExperience);
       }
     }, 50);
