@@ -1,19 +1,17 @@
-.rs-choose {
-  background-image: url("https://img.freepik.com/free-vector/white-abstract-background-design_23-2148825582.jpg?t=st=1685109962~exp=1685110562~hmac=fe923e8…");
+.benefits-wrapper {
+  background-image: url("../../../assets/images/white-abstract-background-design.avif");
   background-repeat: no-repeat;
   background-size: cover;
-  .row {
+  padding: 30px 0;
+  .separation {
     display: flex;
+    gap: 80px;
     .video-wrapper {
       flex: 1;
       background-image: url("../../../assets/images/image-2.jpg");
-      background-position: -50px -50px;
-      background-repeat: no-repeat;
       background-size: cover;
-      object-fit: cover;
-      clip-path: polygon(21% 0, 100% 0, 100% 87%, 90% 100%, 0 100%, 0 29%);
+      clip-path: polygon(9% 0, 100% 0, 100% 89%, 91% 100%, 0 100%, 0 11%);
       position: relative;
-      left: -134px;
       .popup-border {
         position: absolute;
         transform: translateX(0%) translateY(-50%);
@@ -39,151 +37,147 @@
     }
     .video-content-wrapper {
       flex: 1;
-      .widget-wrap-content {
-        .sec-title {
-          margin-top: 1.5rem;
-          .title {
-            font-size: 42px;
+      padding-right: 20px;
+      .text-wrapper {
+        margin: 20px 0;
+        .title {
+          font-size: 42px;
+          font-weight: 700;
+          line-height: 40px;
+          margin: 0;
+          padding-top: 10px;
+          padding-bottom: 20px;
+          font-family: Playfair Display;
+          transition: 0.7s;
+          &:hover {
+            opacity: 1;
+            color: #ffb703f0;
+          }
+        }
+        .sub-text {
+          font-size: 16px;
+          font-weight: 500;
+          margin: 0 0 10px;
+          display: block;
+          span {
+            img {
+              margin-right: 7px;
+              top: 2px;
+              position: relative;
+            }
+          }
+        }
+        .desc {
+          font-size: 16px;
+          line-height: 24px;
+          margin: 0;
+        }
+      }
+      .ability-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px;
+        gap: 25px;
+        .row {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          .serial-number {
+            background-color: #ffb703;
+            font-size: 20px;
             font-weight: 700;
-            line-height: 53px;
-            margin: 0;
-            padding-bottom: 20px;
-            font-family: Playfair Display;
-            transition: 0.7s;
-            &:hover {
-              opacity: 1;
-              color: #ffb703f0;
+            line-height: 2em;
+            text-align: center;
+            width: 40px;
+            border-radius: 30px;
+          }
+          .services-title {
+            .title {
+              font-size: 19px;
+              font-family: "Roboto", Sans-serif;
             }
           }
-          .sub-text {
-            font-size: 16px;
-            font-weight: 500;
-            margin: 0 0 10px;
-            display: block;
-            span {
-              img {
-                margin-right: 7px;
-                top: 2px;
-                position: relative;
+        }
+      }
+      .working-skill-part {
+        margin-top: 30px;
+        .rows {
+          display: flex;
+          gap: 13px;
+          .title-wrapper {
+            display: flex;
+            flex-direction: column;
+            .title-inner {
+              .title {
+                font-size: 18px;
+                font-weight: 500;
+                font-family: "Roboto", Sans-serif;
+                color: #010d14;
+                margin: 0px 0px 0px 0px;
+                line-height: 24px;
               }
             }
           }
-          .desc {
-            font-size: 16px;
-            line-height: 24px;
-            margin: 0;
-          }
-          .row-wrapper {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            .row {
-              margin-bottom: 0;
-              .mini-card1 {
-                display: flex;
-                .service-item {
-                  display: flex;
-                  position: relative;
-                  align-items: center;
-                  .serial-number {
-                    background-color: #ffb703;
-                    position: absolute;
-                    font-size: 20px;
-                    font-weight: 700;
-                    line-height: 2em;
-                    text-align: center;
-                    width: 40px;
-                    border-radius: 30px;
-                  }
-                  .services-textes {
-                    padding: 14px 0px 0px 55px;
-                    .services-title {
-                      .title {
-                        font-size: 19px;
-                        font-family: "Roboto", Sans-serif;
-                      }
-                    }
-                  }
+          .rating-wrapper {
+            flex: 1;
+            .skill-bar-wrapper {
+              background-color: #e8eaee;
+              margin: 10px 5px;
+              position: relative;
+
+              .skill-bar {
+                height: 7px;
+                background-color: #ffb703;
+                border-radius: 3px;
+                width: 80%;
+                .skill-bar-percent {
+                  line-height: 30px;
+                  position: absolute;
+                  right: 40px;
+                  top: -38px;
                 }
               }
             }
-          }
-          .working-skill-part {
-            .rows {
+            .icon-list-item {
+              list-style: outside none none;
+              margin: 0;
+              padding: 0;
               display: flex;
-              .title-wrapper {
-                display: flex;
-                flex-direction: column;
-                width: 33.333%;
-                .title-inner {
-                  .title {
-                    font-size: 18px;
-                    font-weight: 500;
-                    font-family: "Roboto", Sans-serif;
-                    color: #010d14;
-                    margin: 0px 0px 0px 0px;
-                    line-height: 24px;
-                  }
-                }
-              }
-              .ratting-wrapper {
-                flex: 0 0 auto;
-                width: 52.666667%;
-                .rs-skillbar {
-                  background-color: #e8eaee;
-                  height: 7px;
-                  line-height: 7px;
-                  margin: 10px 5px 24px;
-                  border-radius: 3px 3px 3px 3px;
-                  overflow: visible;
-                  position: relative;
-                  .skillbar {
-                    height: 7px;
-                    line-height: 7px;
-                    background-color: #ffb703;
-                    border-radius: 3px 3px 3px 3px;
-                    margin-bottom: 0;
-                    overflow: visible !important;
-                    width: 80%;
-                    .skill-bar-percent {
-                      height: 30px;
-                      line-height: 30px;
-                      position: absolute;
-                      right: 40px;
-                      top: -38px;
-                      font-size: 16px;
-                      font-weight: 400;
-                      color: #010d14;
-                    }
-                  }
-                }
-                .icon-list-item {
-                  list-style: outside none none;
-                  margin: 0;
-                  padding: 0;
-                  li {
-                    display: inline-block;
-                    margin-right: 4px;
-                    mat-icon {
-                      color: #ffb703;
-                    }
-                  }
-                }
-              }
-            }
-            .view-result {
-              padding-top: 15px;
-              font-size: 16px;
-              .viewlink {
-                color: black !important;
-                font-weight: 600 !important;
-                text-decoration: underline !important;
-                &:hover {
-                  color: #ffb703 !important;
+              gap: 5px;
+              li {
+                mat-icon {
+                  color: #ffb703;
                 }
               }
             }
           }
         }
+        .view-result {
+          padding-top: 15px;
+          font-size: 16px;
+          .viewlink {
+            color: black;
+            font-weight: 600;
+            text-decoration: underline;
+            &:hover {
+              color: #ffb703;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 950px) {
+  .benefits-wrapper {
+    .separation {
+      display: block;
+      .video-content-wrapper {
+        padding-right: 30px;
+        padding-left: 30px;
       }
     }
   }

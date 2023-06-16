@@ -1,23 +1,25 @@
 <section>
-  <div class="contact-wrapper" *ngFor="let item of contact">
+  <div class="contact-wrapper">
     <section>
       <div class="circle"></div>
       <div class="circle2"></div>
       <mat-card>
         <mat-card-header>
-          <div class="first-raw">
-            <h2>
-              {{ item.describe }}
+          <div class="heading-wrapper">
+            <h2 class="contact-heading">Contact Us</h2>
+            <h2 class="description-heading">
+              Describe your product idea and we will start working on it within
+              24 hours.
             </h2>
-            <H2> {{ item.contact }}</H2>
           </div>
         </mat-card-header>
         <form
           [formGroup]="profileForm"
           (ngSubmit)="onSubmit(profileForm.value)"
+          class="contact-form-wrapper"
         >
           <mat-card-content>
-            <div class="aboutself">
+            <div class="about-self">
               <div class="names">
                 <input
                   matInput
@@ -28,7 +30,7 @@
                 />
                 <input
                   matInput
-                  formControlName="LastName"
+                  formControlName="lastName"
                   required
                   type="text"
                   placeholder="Last Name"
@@ -37,14 +39,14 @@
               <div class="emails">
                 <input
                   matInput
-                  formControlName="Emails"
+                  formControlName="emails"
                   type="text"
                   required
                   placeholder="Email"
                 />
                 <input
                   matInput
-                  formControlName="Company"
+                  formControlName="company"
                   required
                   type="text"
                   placeholder="Company"
@@ -60,11 +62,9 @@
             </div>
           </mat-card-content>
           <mat-card-footer>
-            <a
-              href="mailto:stantarif006@gmail.com
-               "
-              ><button mat-raised-button type="submit">Send message</button></a
-            >
+            <!-- <a href="mailto:stantarif006@gmail.com"> -->
+            <button mat-raised-button type="submit">Send message</button>
+            <!-- </a> -->
           </mat-card-footer>
         </form>
       </mat-card>

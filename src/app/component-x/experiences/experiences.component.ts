@@ -7,16 +7,6 @@ import { Router } from '@angular/router';
   styleUrls: ['./experiences.component.scss'],
 })
 export class ExperiencesComponent {
-  countdown: any = [
-    {
-      subimg:
-        'https://devsdesign.net/products/html/konstruk/assets/images/shape-1.png',
-      subtext: ' NUMBER TALKS',
-      title: 'Our team of experts will help you get things complete.',
-      paragraph: 'mirza demolitions will help you get things complete.',
-      btn: 'CONTACT NOW',
-    },
-  ];
   completedProjects: number = 0;
   yearsOfExperience: number = 0;
   currentProjects: number = 0;

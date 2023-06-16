@@ -32,7 +32,8 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/aos/dist/aos.js"
+              "node_modules/aos/dist/aos.js",
+              "src/assets/script/smtp.js"
             ]
           },
           "configurations": {
@@ -95,7 +96,8 @@
               "src/styles.scss"
             ],
             "scripts": [
-              "node_modules/aos/dist/aos.js"
+              "node_modules/aos/dist/aos.js",
+              "src/assets/script/smtp.js"
             ]
           }
         }
